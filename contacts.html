@@ -42,9 +42,30 @@
                     </ul>
                 </nav>
             </div>
-            <div class="header-search-container">
-    <!-------- place for search form and btn-->
-    <!--не забыть поставить ареа лейбл к кнопке-->
+            <div class="header__search-container">
+                <form action="/#"
+                    class="header__form"
+                    method="get"
+                    role="search">
+                    <label class="header__form-label visually-hidden"
+                        for="id-header-search">
+                        Site search input fields
+                    </label>
+                    <input type="search"
+                        name="header-search"
+                        id="id-header-search"
+                        class="header__search-filds"
+                        placeholder="Search for Digital Assets"
+                        required
+                        aria-label="Search field"
+                        title="Search for something..."
+                    >
+                </form>
+                <a href="/#" class="header__card-button">
+                    <svg class="header__button-image">
+                        <!-- <use></use> -->
+                    </svg>
+                </a>
             </div>
         </header>
 
