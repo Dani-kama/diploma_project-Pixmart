@@ -447,22 +447,22 @@
                         <h2 class="footer__list-header">Company</h2>
                         <ul class="footer__list">
                             <li class="footer__links-lists-items">
-                                <a href="">Homepage v1</a>
+                                <a href="#">Homepage v1</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Homepage v2</a>
+                                <a href="#">Homepage v2</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Homepage v3</a>
+                                <a href="#">Homepage v3</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">About Us</a>
+                                <a href="#">About Us</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">About Us</a>
+                                <a href="#">About Us</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Blog Articles</a>
+                                <a href="#">Blog Articles</a>
                             </li>
                         </ul>
                     </section>
@@ -471,22 +471,22 @@
                         <h2 class="footer__list-header">Products</h2>
                         <ul class="footer__list">
                             <li class="footer__links-lists-items">
-                                <a href="">Website</a>
+                                <a href="#">Website</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Mobile App</a>
+                                <a href="#">Mobile App</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Social Media Feeds</a>
+                                <a href="#">Social Media Feeds</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Presentation</a>
+                                <a href="#">Presentation</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Product Mockups</a>
+                                <a href="#">Product Mockups</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Illustrations</a>
+                                <a href="#">Illustrations</a>
                             </li>
                         </ul>
                     </section>
@@ -495,22 +495,22 @@
                         <h2 class="footer__list-header">Account</h2>
                         <ul class="footer__list">
                             <li class="footer__links-lists-items">
-                                <a href="">Your Cart</a>
+                                <a href="#">Your Cart</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Check Out</a>
+                                <a href="#">Check Out</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Refund Policy</a>
+                                <a href="#">Refund Policy</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Company Policy</a>
+                                <a href="#">Company Policy</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Send A Message</a>
+                                <a href="#">Send A Message</a>
                             </li>
                             <li class="footer__links-lists-items">
-                                <a href="">Customer Support</a>
+                                <a href="#">Customer Support</a>
                             </li>
                         </ul>
                     </section>
@@ -520,38 +520,72 @@
             <div class="newsletter">
                 <ul class="footer__social-media-list">
                     <li class="footer__social-media-item">
-                        <a href="" class="footer__social-media-links">
+                        <a href="#"
+                            class="footer__social-media-links"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
 
                         </a>
                     </li>
                     <li class="footer__social-media-item">
-                        <a href="" class="footer__social-media-links">
+                        <a href="#"
+                            class="footer__social-media-links"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
 
                         </a>
                     </li>
                     <li class="footer__social-media-item">
-                        <a href="" class="footer__social-media-links">
+                        <a href="#"
+                            class="footer__social-media-links"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
 
                         </a>
                     </li>
                 </ul>
-                <!-- <form action="" class="footer__subscibe-form"></form> -->
-                <div class="footer__copyright-container">
-                    <nav class="footer__copyright-navigation">
-                        <ul class="footer__copyright-list">
-                            <li class="footer__copyright-item">
-                                <a href="" class="footer__copyright-links">Privacy Policy</a>
-                            </li>
-                            <li class="footer__copyright-item">
-                                <a href="" class="footer__copyright-links">Terms and Condition</a>
-                            </li>
-                            <li class="footer__copyright-item">
-                                <a href="" class="footer__copyright-links">Site Map</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <p class="footer__copyright">Copyright &copy; 2024 Pixmart. All rights reserved.</p>
-                </div>
+                <form action="#"
+                    method="post"
+                    class="newsletter__form"
+                >
+                    <label for="id-footer-user-email" class="newsletter__form-label">
+                        Subscribe to Design Newsletter
+                    </label>
+                    <input type="email"
+                        name="footer-user-email"
+                        id="id-footer-user-email"
+                        class="newsletter__emal-input"
+                        placeholder="Enter your email address ..."
+                        required
+                        title="Enter a valid email address"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    >
+                    <button type="submit"
+                        class="newsletter__form-button"
+                        title="Subscribe"
+                    >
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+            <div class="footer__copyright-container">
+                <nav class="footer__copyright-navigation">
+                    <ul class="footer__copyright-list">
+                        <li class="footer__copyright-item">
+                            <a href="#" class="footer__copyright-links">Privacy Policy</a>
+                        </li>
+                        <li class="footer__copyright-item">
+                            <a href="#" class="footer__copyright-links">Terms and Condition</a>
+                        </li>
+                        <li class="footer__copyright-item">
+                            <a href="#" class="footer__copyright-links">Site Map</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__copyright">Copyright &copy; 2024 Pixmart. All rights reserved.</p>
             </div>
         </footer>
     </body>
