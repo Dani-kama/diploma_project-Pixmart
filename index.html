@@ -57,7 +57,6 @@
                         class="header__search-filds"
                         placeholder="Search for Digital Assets"
                         required
-                        aria-label="Search field"
                         title="Search for something..."
                     >
                 </form>
@@ -654,23 +653,45 @@
                         </a>
                     </li>
                 </ul>
-                <!-- <form action="" class="footer__subscibe-form"></form> -->
-                <div class="footer__copyright-container">
-                    <nav class="footer__copyright-navigation">
-                        <ul class="footer__copyright-list">
-                            <li class="footer__copyright-item">
-                                <a href="#" class="footer__copyright-links">Privacy Policy</a>
-                            </li>
-                            <li class="footer__copyright-item">
-                                <a href="#" class="footer__copyright-links">Terms and Condition</a>
-                            </li>
-                            <li class="footer__copyright-item">
-                                <a href="#" class="footer__copyright-links">Site Map</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <p class="footer__copyright">Copyright &copy; 2024 Pixmart. All rights reserved.</p>
-                </div>
+                <form action="#"
+                    method="post"
+                    class="newsletter__form"
+                >
+                    <label for="id-footer-user-email" class="newsletter__form-label">
+                        Subscribe to Design Newsletter
+                    </label>
+                    <input type="email"
+                        name="footer-user-email"
+                        id="id-footer-user-email"
+                        class="newsletter__emal-input"
+                        placeholder="Enter your email address ..."
+                        required
+                        title="Enter a valid email address"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    >
+                    <button type="submit"
+                        class="newsletter__form-button"
+                        title="Subscribe"
+                    >
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+            <div class="footer__copyright-container">
+                <nav class="footer__copyright-navigation">
+                    <ul class="footer__copyright-list">
+                        <li class="footer__copyright-item">
+                            <a href="#" class="footer__copyright-links">Privacy Policy</a>
+                        </li>
+                        <li class="footer__copyright-item">
+                            <a href="#" class="footer__copyright-links">Terms and Condition</a>
+                        </li>
+                        <li class="footer__copyright-item">
+                            <a href="#" class="footer__copyright-links">Site Map</a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="footer__copyright">Copyright &copy; 2024 Pixmart. All rights reserved.</p>
             </div>
         </footer>
     
