@@ -83,7 +83,11 @@
             </section>
 
             <section class="side-filters">
-                <form action="/#" method="get" class="side-filters__form">
+                <form action="/#"
+                    method="get"
+                    class="side-filters__form"
+                    id="id-form-filters"
+                >
                     <fieldset class="side-filters__form-categories">
                         <legend class="side-filters__form-categories-tittle">
                             Categories
@@ -412,10 +416,36 @@
 
             <div class="content">
                 <div class="content__filters-buttons">
+                    <label for="" class="content__filters-select-tittle">
+                        Sort by
+                    </label>
+                    <select name="sort-by"
+                        id="id-sort-by"
+                        class="content__filters-select-input"
+                        form="id-form-filters"
+                    >
+                        <option value="best-seller"
+                            class="content__filters-select-item"
+                        >
+                            Best Seller
+                        </option>
+                        <option value="newest"
+                            class="content__filters-select-item"
+                        >
+                            Newest
+                        </option>
+                        <option value="price"
+                            class="content__filters-select-item"
+                        >
+                            Price
+                        </option>
+                        <option value="lorem"
+                            class="content__filters-select-item"
+                        >
+                            Lorem
+                        </option>
+                    </select>
                     <div class="content__view">
-                        <!-- <form action="" class="content__filter-button">
-
-                        </form> -->
                         <p class="content__filter-results">
                             Showing
                             <span class="content__results-shown" id="results-shown">12</span>
@@ -448,6 +478,7 @@
                             <svg class="content__view-button-img">
                                 <use></use>
                             </svg>
+                        </button>
                     </div>
                     <ul class="content__tags-list">
                         <li class="content__tag-item">
