@@ -133,15 +133,29 @@
                     </div>
                 </div>
                 <div class="contact__form-wrap">
-                    <!-- <form action="" class="contact__form">
-    
-                    </form> -->
+                    <form action="/#" method="post"></form>
                     <div class="contact__footer-form">
                         <div class="contact__policy-wrap">
-                            <input type="checkbox" id="" class="contact__subscribe-policy-check">
-                            <label for="">Subscribe me to Newsletter</label>
-                            <input type="checkbox" id="" class="contact__subscribe-policy-check">
-                            <label for="">I have read the User & Privacy Policy</label>
+                            <input type="checkbox"
+                                id="id-subscribe-me"
+                                class="contact__subscribe-policy-check"
+                                name="subscribe-me"
+                                form=""
+                            >
+                            <label for="id-subscribe-me" class="contact__subscribe-policy-label">
+                                Subscribe me to Newsletter
+                            </label>
+                            <input type="checkbox"
+                                id="id-policy"
+                                class="contact__subscribe-policy-check"
+                                name="subscribe-me"
+                                form=""
+                                required
+                                checked
+                            >
+                            <label for="id-policy" class="contact__subscribe-policy-label">
+                                I have read the User & Privacy Policy
+                            </label>
                         </div>
                         <button class="contact__submit-button">
                             Send Message
