@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<meta name="description" content="description text">-->
+        <!--<meta name="keywords" content=" tags words">-->
+        <!-- <meta name="copyright" content="my name"> -->
+        <title>PixMart Catalog</title>
+        <!-- place for icons and favicons -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--<link href= font-link place-->
+        <!--<link href= normalize.css place-->
+        <!--<link href= style.css--> 
+        <script src='https://api.mapbox.com/mapbox-gl-js/v3.9.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v3.9.1/mapbox-gl.css' rel='stylesheet' />
+        <meta name="color-scheme" content="light">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__wrap">
+                <a class="header__link-svg" href="index.html">
+    <!------------<svg></svg> -->
+                </a>
+                <nav class="nav-menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">about</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">products</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">creators</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">blog</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__search-container">
+                <form action="/#"
+                    class="header__form"
+                    method="get"
+                    role="search">
+                    <label class="header__form-label visually-hidden"
+                        for="id-header-search">
+                        Site search input fields
+                    </label>
+                    <input type="search"
+                        name="header-search"
+                        id="id-header-search"
+                        class="header__search-filds"
+                        placeholder="Search for Digital Assets"
+                        required
+                        title="Search for something..."
+                    >
+                </form>
+                <a href="/#" class="header__card-button"
+                    title="Go to the Cart"
+                >
+                    <svg class="header__button-image">
+                        <!-- <use></use> -->
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="contact">
+                <div class="contact__title-wrap">
+                    <h2 class="contact__header">CONTACT</h2>
+                    <h3 class="contact__title">
+                        Get in Touch with Us
+                    </h3>
+                    <p class="contact__text">
+                        We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.
+                    </p>
+                </div>
+                <button class="contact__button">
+                    Shop Now
+                </button>
+                <ul class="contact__information-list">
+                    <li class="contact__information-item">
+                        <a href="tel:+15551234567"
+                            target="_blank"
+                            class="contact__item-link"
+                        >
+                            +1 (555) 123-4567
+                        </a>
+                    </li>
+                    <li class="contact__information-item">
+                        <a href="mailto:support@pixmart.com?subject=Support%20Request&body=Hello%2C%20I%20need%20help%20with..."
+                            class="contact__item-link"
+                            target="_blank"
+                        >
+                            support@pixmart.com
+                        </a>
+                    </li>
+                    <li class="contact__information-item">
+                        <span class="contact__working-days">
+                                Monday to Friday
+                            </span>:
+                            <time class="contact__working-start"
+                                datetime="09:00-05:00"
+                            >
+                                9 AM
+                            </time> - 
+                            <time class="contact__working-end"
+                                datetime="17:00-05:00"
+                            >
+                                5 PM
+                            </time>
+                            EST
+                    </li>
+                </ul>
+                <div class="contact__map-wrap">
+
+                    <div class="contact__location-text-wrap">
+                        <p class="contact__name">
+                            PixMart HQ
+                        </p>
+                        <p class="contact__address">
+                            123 Creative Ave, Design City, 45678
+                        </p>
+                    </div>
+                </div>
+                <div id='map' style='width: 600px; height: 320px;'></div>
+                <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZHRodG1sIiwiYSI6ImNtNTRqd3VydjBoZGgybnMycnU2M2RpNXkifQ.idR1QCY9K30o1176TBoxuw';
+                const map = new mapboxgl.Map({
+                    container: 'map', // container ID
+                    style: 'mapbox://styles/dthtml/cm54f77tx00d301sbglkt0u21?optimize=true', // style URL
+                    center: [-73.624,40.823], // starting position [lng, lat]
+                    zoom: 9, // starting zoom
+                });
+                </script>
+        </main>
+
+
+    </body>
+</html>
