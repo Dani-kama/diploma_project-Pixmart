@@ -83,7 +83,7 @@
                     Design Assets
                 </h1>
             </section>
-<!-- change the ul in fieldset -->
+
             <section class="side-filters">
                 <form action="/#"
                     method="get"
@@ -94,206 +94,177 @@
                         <legend class="side-filters__form-categories-tittle">
                             Categories
                         </legend>
-                        <ul class="side-filters__categories-list">
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-all-categories"
-                                    class="side-filters__categories-check-box"
-                                    value="all"
-                                    checked
-                                >
-                                <label for="id-all-categories"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    All Categories
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-technology"
-                                    class="side-filters__categories-check-box"
-                                    value="technology"
-                                >
-                                <label for="id-technology"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    Technology
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-travel-tourism"
-                                    class="side-filters__categories-check-box"
-                                    value="travel-tourism"
-                                >
-                                <label for="id-travel-tourism"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    Travel & Tourism
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-health"
-                                    class="side-filters__categories-check-box"
-                                    value="health"
-                                >
-                                <label for="id-health"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    Health & Fitness
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-e-commerce"
-                                    class="side-filters__categories-check-box"
-                                    value="e-commerce"
-                                >
-                                <label for="id-e-commerce"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    E-Commerce
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-education"
-                                    class="side-filters__categories-check-box"
-                                    value="education"
-                                >
-                                <label for="id-education"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    Education
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-entertainment"
-                                    class="side-filters__categories-check-box"
-                                    value="entertainment"
-                                >
-                                <label for="id-entertainment"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    Entertainment
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-others"
-                                    class="side-filters__categories-check-box"
-                                    value="others"
-                                >
-                                <label for="id-others"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    Others
-                                </label>
-                            </li>
-                            <li class="side-filters__categories-item">
-                                <input type="checkbox"
-                                    name="categories"
-                                    id="id-others-secondary"
-                                    class="side-filters__categories-check-box"
-                                    value="others-secondary"
-                                >
-                                <label for="id-others-secondary"
-                                    class="side-filters__categories-check-label"
-                                >
-                                    Others
-                                </label>
-                            </li>
-                        </ul>
+                        <div class="side-filters__categories-container">
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-all-categories"
+                                class="side-filters__categories-check-box"
+                                value="all"
+                                checked
+                            >
+                            <label for="id-all-categories"
+                                class="side-filters__categories-check-label"
+                            >
+                                All Categories
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-technology"
+                                class="side-filters__categories-check-box"
+                                value="technology"
+                            >
+                            <label for="id-technology"
+                                class="side-filters__categories-check-label"
+                            >
+                                Technology
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-travel-tourism"
+                                class="side-filters__categories-check-box"
+                                value="travel-tourism"
+                            >
+                            <label for="id-travel-tourism"
+                                class="side-filters__categories-check-label"
+                            >
+                                Travel & Tourism
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-health"
+                                class="side-filters__categories-check-box"
+                                value="health"
+                            >
+                            <label for="id-health"
+                                class="side-filters__categories-check-label"
+                            >
+                                Health & Fitness
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-e-commerce"
+                                class="side-filters__categories-check-box"
+                                value="e-commerce"
+                            >
+                            <label for="id-e-commerce"
+                                class="side-filters__categories-check-label"
+                            >
+                                E-Commerce
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-education"
+                                class="side-filters__categories-check-box"
+                                value="education"
+                            >
+                            <label for="id-education"
+                                class="side-filters__categories-check-label"
+                            >
+                                Education
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-entertainment"
+                                class="side-filters__categories-check-box"
+                                value="entertainment"
+                            >
+                            <label for="id-entertainment"
+                                class="side-filters__categories-check-label"
+                            >
+                                Entertainment
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-others"
+                                class="side-filters__categories-check-box"
+                                value="others"
+                            >
+                            <label for="id-others"
+                                class="side-filters__categories-check-label"
+                            >
+                                Others
+                            </label>
+                            <input type="checkbox"
+                                name="categories"
+                                id="id-others-secondary"
+                                class="side-filters__categories-check-box"
+                                value="others-secondary"
+                            >
+                            <label for="id-others-secondary"
+                                class="side-filters__categories-check-label"
+                            >
+                                Others
+                            </label>
+                        </div>
                     </fieldset>
                     <fieldset class="side-filters__form-format">
                         <legend class="side-filters__form-format-tittle">
                             Format Type
                         </legend>
-                        <ul class="side-filters__format-list">
-                            <li class="side-filters__format-item">
-                                <input type="radio"
-                                    name="format"
-                                    id="id-figma"
-                                    class="side-filters__format-radio"
-                                    value="figma"
-                                    checked
-                                >
-                                <label for="id-figma"
-                                    class="side-filters__format-radio-label"
-                                >
-                                    Figma
-                                </label>
-                            </li>
-                            <li class="side-filters__format-item">
-                                <input type="radio"
-                                    name="format"
-                                    id="id-sketch"
-                                    class="side-filters__format-radio"
-                                    value="sketch"
-                                >
-                                <label for="id-sketch"
-                                    class="side-filters__format-radio-label"
-                                >
-                                    Sketch
-                                </label>
-                            </li>
-                            <li class="side-filters__format-item">
-                                <input type="radio"
-                                    name="format"
-                                    id="id-adobe-xd"
-                                    class="side-filters__format-radio"
-                                    value="adobe-xd"
-                                >
-                                <label for="id-adobe-xd"
-                                    class="side-filters__format-radio-label"
-                                >
-                                    Adobe XD
-                                </label>
-                            </li>
-                            <li class="side-filters__format-item">
-                                <input type="radio"
-                                    name="format"
-                                    id="id-adobe-ps"
-                                    class="side-filters__format-radio"
-                                    value="adobe-ps"
-                                >
-                                <label for="id-adobe-ps"
-                                    class="side-filters__format-radio-label"
-                                >
-                                    Adobe Photoshop
-                                </label>
-                            </li>
-                            <li class="side-filters__format-item">
-                                <input type="radio"
-                                    name="format"
-                                    id="id-adobe-il"
-                                    class="side-filters__format-radio"
-                                    value="adobe-il"
-                                >
-                                <label for="id-adobe-il"
-                                    class="side-filters__format-radio-label"
-                                >
-                                    Adobe Illustration
-                                </label>
-                            </li>
-                        </ul>
+                        <div class="side-filters__format-container">
+                            <input type="radio"
+                                name="format"
+                                id="id-figma"
+                                class="side-filters__format-radio"
+                                value="figma"
+                                checked
+                            >
+                            <label for="id-figma"
+                                class="side-filters__format-radio-label"
+                            >
+                                Figma
+                            </label>
+                            <input type="radio"
+                                name="format"
+                                id="id-sketch"
+                                class="side-filters__format-radio"
+                                value="sketch"
+                            >
+                            <label for="id-sketch"
+                                class="side-filters__format-radio-label"
+                            >
+                                Sketch
+                            </label>
+                            <input type="radio"
+                                name="format"
+                                id="id-adobe-xd"
+                                class="side-filters__format-radio"
+                                value="adobe-xd"
+                            >
+                            <label for="id-adobe-xd"
+                                class="side-filters__format-radio-label"
+                            >
+                                Adobe XD
+                            </label>
+                            <input type="radio"
+                                name="format"
+                                id="id-adobe-ps"
+                                class="side-filters__format-radio"
+                                value="adobe-ps"
+                            >
+                            <label for="id-adobe-ps"
+                                class="side-filters__format-radio-label"
+                            >
+                                Adobe Photoshop
+                            </label>
+                            <input type="radio"
+                                name="format"
+                                id="id-adobe-il"
+                                class="side-filters__format-radio"
+                                value="adobe-il"
+                            >
+                            <label for="id-adobe-il"
+                                class="side-filters__format-radio-label"
+                            >
+                                Adobe Illustration
+                            </label>
+                        </div>
                     </fieldset>
                     <fieldset class="side-filters__form-style">
                         <legend class="side-filters__form-style-tittle">
                             Style
                         </legend>
-                        <ul class="side-filters__style-list">
-                            <li class="side-filters__style-item">
+                        <div class="side-filters__style-wrap">
                                 <input type="checkbox"
                                     name="style"
                                     id="id-minimalist"
@@ -306,8 +277,6 @@
                                 >
                                     Minimalist
                                 </label>
-                            </li>
-                            <li class="side-filters__style-item">
                                 <input type="checkbox"
                                     name="style"
                                     id="id-modern"
@@ -320,8 +289,6 @@
                                 >
                                     Modern
                                 </label>
-                            </li>
-                            <li class="side-filters__style-item">
                                 <input type="checkbox"
                                     name="style"
                                     id="id-playful"
@@ -334,8 +301,6 @@
                                 >
                                     Playful
                                 </label>
-                            </li>
-                            <li class="side-filters__style-item">
                                 <input type="checkbox"
                                     name="style"
                                     id="id-dark-mode"
@@ -348,8 +313,6 @@
                                 >
                                     Dark Mode
                                 </label>
-                            </li>
-                            <li class="side-filters__style-item">
                                 <input type="checkbox"
                                     name="style"
                                     id="id-photocentric"
@@ -362,8 +325,7 @@
                                 >
                                     Photocentric
                                 </label>
-                            </li>
-                        </ul>
+                        </div>
                     </fieldset>
                     <fieldset class="side-filters__form-price">
                         <legend class="side-filters__form-style-price">
