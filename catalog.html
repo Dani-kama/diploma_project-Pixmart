@@ -95,7 +95,7 @@
                 </h1>
             </section>
 
-            <section class="side-filters">
+            <div class="side-filters">
                 <form
                     action="/#"
                     method="get"
@@ -376,7 +376,7 @@
                         Clear all filters
                     </button>
                 </form>
-            </section>
+            </div>
 
             <div class="content">
                 <div class="content__filters-buttons">
@@ -413,7 +413,7 @@
                         <button
                             type="button"
                             class="content__view-button"
-                            aria-controls="content__product-list"
+                            aria-controls="id-content__product-list"
                             aria-label="button for show grid"
                             title="show in grid"
                             data-action=""
@@ -431,7 +431,7 @@
                         <button
                             type="button"
                             class="content__view-button"
-                            aria-controls="content__product-list"
+                            aria-controls="id-content__product-list"
                             aria-label="button for show list"
                             title="show in list"
                             data-action=""
@@ -488,7 +488,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="content__product-list">
+                <div class="content__product-list" id="id-content__product-list">
                     <article class="content__card">
                         <a href="#" class="content__card-link">
                             <img
@@ -507,8 +507,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€00.00</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="1" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -520,8 +522,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a1"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -555,8 +559,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€20.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="2" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -568,8 +574,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a2"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -603,8 +611,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€45.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="3" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -616,8 +626,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a3"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -651,8 +663,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€15.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="4" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -664,8 +678,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a4"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -699,8 +715,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€19.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="5" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -712,8 +730,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a5"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -747,8 +767,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€00.00</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="6" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -760,8 +782,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a6"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -795,8 +819,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€00.00</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="7" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -808,8 +834,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a7"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -843,8 +871,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€25.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="8" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -856,8 +886,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a8"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -891,8 +923,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€41.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="9" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -904,8 +938,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a9"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -939,8 +975,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€15.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="10" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -952,8 +990,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a10"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -987,8 +1027,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€10.99</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="11"
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -1000,8 +1042,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a11"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -1035,8 +1079,10 @@
                         <div class="content__price-buttons">
                             <p class="content__price">€00.00</p>
                             <div class="content__buttons-container">
-                                <button class="content__button" type="button"
-                                    id="favorites" 
+                                <button
+                                    class="content__button"
+                                    type="button"
+                                    data-card-id="12" 
                                     aria-label="add to favorites"
                                 >
                                     <svg
@@ -1048,8 +1094,10 @@
                                         <use xlink:href="/img/sprite.svg#favorite-ico"></use>
                                     </svg>
                                 </button>
-                                <button class="content__button" type="button"
-                                    id="cart-add"
+                                <button
+                                    class="content__button-cart"
+                                    type="button"
+                                    data-card-id="a12"
                                     aria-label="add to cart"
                                 >
                                     <svg
@@ -1068,7 +1116,7 @@
                 <button
                     type="button"
                     class="content__action-button"
-                    aria-controls="content__product-list"
+                    aria-controls="id-content__product-list"
                     aria-label="button for show more items"
                     title="Load more"
                     data-action=""
