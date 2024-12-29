@@ -31,6 +31,7 @@
     --color-headings: rgba(15, 115, 246, 1);
     --color-brand-buttons: rgba(245, 248, 251, 1);
     --color-bg-base-invert: var(--color-text-primary);
+    --color-titles: rgb(34, 34, 34);
 }
 
 .visually-hidden {
@@ -132,5 +133,19 @@ body {
     font-weight: var(--font-weight-small);
     color: var(--color-brand);
     text-transform: uppercase;
+}
+
+.categories__title,
+.trending__title,
+.pricing-plan__title,
+.faq__title,
+.blog__title,
+.contact__title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-subheadings);
+    font-weight: var(--font-weight-extra);
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    color: var(--color-titles);
 }
 
