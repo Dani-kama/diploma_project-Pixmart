@@ -18,6 +18,7 @@
     --font-weight-large: 600;
     --font-weight-medium: 500;
     --font-weight-small: 400;
+    --font-line-height-heroes: 62px;
     --font-line-height-large: 28px;
     --font-line-height-medium: 24px;
     --font-line-height-small: 20px;
@@ -28,7 +29,84 @@
     --color-text-secondary: rgba(42, 53, 65, 0.85);
     --color-text-secondary-alt: rgba(42, 53, 65, 0.7);
     --color-headings: rgba(15, 115, 246, 1);
-    --color-bg-base-invert: rgba(13, 13, 21, 1);
+    --color-brand-buttons: rgba(245, 248, 251, 1);
+    --color-bg-base-invert: var(--color-text-primary);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-extra-small);
+    font-weight: var(--font-weight-large);
+    line-height: var(--font-line-height-medium);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-base);
+}
+
+.nav-menu__link {
+    line-height: var(--font-line-height-small);
+}
+
+.header__search-filds::placeholder {
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-secondary-alt);
+}
+
+.hero__title,
+.catalog__heading,
+.blog-details__heading,
+.contact__title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-heroes);
+    line-height: var(--font-line-height-heroes);
+    font-weight: var(--font-weight-extra);
+    letter-spacing: -0.5px;
+}
+
+.hero__accent {
+    color: var(--color-brand);
+}
+
+.hero__slogan {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    line-height: var(--font-line-height-large);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+}
+
+.hero__buttons {
+    font-size: var(--font-size-buttons);
+    line-height: var(--font-line-height-large);
+    background-color: var(--color-brand);
+    color: var(--color-brand-buttons);
+}
+
+.hero__buttons-social {
+    font-size: var(--font-size-buttons);
+    line-height: var(--font-line-height-large);
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+}
+
+.hero {
+    background: linear-gradient(90deg, rgb(240, 246, 253) 44%, rgb(255, 255, 255) 100%);
+}
