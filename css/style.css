@@ -122,3 +122,15 @@ body {
     color: var(--color-text-primary);
 }
 
+.categories__header,
+.trending__header,
+.pricing-plan__header,
+.faq__header,
+.blog__header,
+.contact__header {
+    font-size: var(--font-size-headings);
+    font-weight: var(--font-weight-small);
+    color: var(--color-brand);
+    text-transform: uppercase;
+}
+
