@@ -133,7 +133,7 @@ body {
 .contact__header {
     font-size: var(--font-size-headings);
     font-weight: var(--font-weight-small);
-    color: var(--color-brand);
+    color: var(--color-headings);
     text-transform: uppercase;
 }
 
@@ -211,5 +211,22 @@ body {
     font-weight: var(--font-weight-small);
 }
 
+.pricing-plan__cards-link,
+.faq__header-link {
+    font-size: var(--font-size-buttons);
+    line-height: var(--font-line-height-large);
+    color: var(--color-text-primary);
+}
 
+.faq__content-title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 26px;
+}
+
+.faq__content-details {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+}
 
