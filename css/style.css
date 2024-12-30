@@ -166,3 +166,44 @@ body {
     line-height: var(--font-size-extra);
     color: var(--color-text-primary);
 }
+
+.categories__cards {
+    background: rgb(244, 247, 250);
+}
+
+.categories__cards-category,
+.trending__cards-category {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-secondary);
+}
+
+.trending__numbers {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-brand);
+}
+
+.pricing-plan__cards-header {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 26px;
+}
+
+.pricing-plan__time {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-primary);
+    opacity: 0.5;
+}
+
+.pricing-plan__price {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-extra);
+    font-weight: var(--font-weight-extra);
+    line-height: 48px;
+    color: var(--color-text-primary);
+}
+
+
