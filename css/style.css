@@ -230,3 +230,9 @@ body {
     font-weight: var(--font-weight-small);
 }
 
+.blog__article-tag {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-brand-buttons);
+    background-color: var(--color-brand);
+}
