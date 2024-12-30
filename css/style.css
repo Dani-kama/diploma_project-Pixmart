@@ -156,3 +156,12 @@ body {
     line-height: var(--font-size-extra-large);
     color: rgba(34, 34, 34, 1);
 }
+
+.categories__cards-title,
+.trending__cards-title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-extra-large);
+    font-weight: var(--font-weight-extra);
+    line-height: var(--font-size-extra);
+    color: var(--color-text-primary);
+}
