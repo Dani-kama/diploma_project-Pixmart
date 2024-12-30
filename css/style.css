@@ -206,4 +206,10 @@ body {
     color: var(--color-text-primary);
 }
 
+.pricing-plan__list-items {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+}
+
+
 
