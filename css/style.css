@@ -236,3 +236,31 @@ body {
     color: var(--color-brand-buttons);
     background-color: var(--color-brand);
 }
+
+.blog__article-titel {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-extra-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 36px;
+    color: var(--color-text-primary);
+}
+
+.blog__article-time {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-secondary-alt);
+}
+
+.footer__logo-description {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+}
+
+.footer__list-header {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 26px;
+}
+
+
