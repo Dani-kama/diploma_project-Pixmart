@@ -94,7 +94,8 @@ body {
     color: var(--color-text-secondary);
 }
 
-.hero__buttons {
+.hero__buttons,
+.categories__button {
     font-size: var(--font-size-buttons);
     line-height: var(--font-line-height-large);
     background-color: var(--color-brand);
@@ -149,3 +150,10 @@ body {
     color: var(--color-titles);
 }
 
+.categories__description {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-size-extra-large);
+    color: rgba(34, 34, 34, 1);
+    
+}
