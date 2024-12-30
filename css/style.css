@@ -95,7 +95,8 @@ body {
 }
 
 .hero__buttons,
-.categories__button {
+.categories__button,
+.trending__card-link {
     font-size: var(--font-size-buttons);
     line-height: var(--font-line-height-large);
     background-color: var(--color-brand);
