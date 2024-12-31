@@ -263,4 +263,41 @@ body {
     line-height: 26px;
 }
 
+.footer__links {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-secondary);
+}
 
+.newsletter__form-label {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-medium-large);
+    font-weight: var(--font-weight-extra);
+}
+
+.newsletter__emal-input::placeholder {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-medium);
+    color: var(--color-text-secondary-alt);
+}
+
+.newsletter__form-button {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-large);
+    line-height: var(--font-line-height-medium);
+    color: var(--color-brand-buttons);
+    background-color: var(--color-brand);
+}
+
+.footer__copyright-container {
+    background-color: var(--color-bg-base-invert);
+}
+
+.footer__copyright-links,
+.footer__copyright {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: rgba(231, 238, 247, 0.66);
+}
