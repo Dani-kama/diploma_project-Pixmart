@@ -362,3 +362,27 @@ body {
     font-weight: var(--font-weight-small);
     color: var(--color-text-secondary);
 }
+
+.content__action-button {
+    font-size: var(--font-size-buttons);
+    font-weight: var(--font-weight-large);
+    line-height: var(--font-line-height-large);
+    color: var(--color-text-primary);
+}
+
+/* blog details page */
+
+.blog-details__tag {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-brand-buttons);
+    background-color: var(--color-brand);
+}
+
+.blog-details__author-name {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 26px;
+    color: var(--color-titles);
+}
