@@ -349,3 +349,16 @@ body {
     line-height: var(--font-line-height-small);
 }
 
+.content__card-title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 36px;
+    color: var(--color-text-primary);
+}
+
+.content__cards-category {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-secondary);
+}
