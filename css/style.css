@@ -301,3 +301,46 @@ body {
     font-weight: var(--font-weight-small);
     color: rgba(231, 238, 247, 0.66);
 }
+
+/* catalog page  */
+
+.side-filters__form-categories-tittle,
+.side-filters__form-format-tittle,
+.side-filters__form-style-tittle,
+.side-filters__form-style-price {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-medium-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 32px;
+}
+
+.side-filters__categories-check-label,
+.side-filters__format-radio-label,
+.side-filters__style-toggle-label {
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-small);
+}
+
+.side-filters__form-range-value {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: rgba(34, 34, 34, 1);
+}
+
+.side-filters__form-reset {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-large);
+    line-height: var(--font-line-height-medium);
+}
+
+.content__filters-select-input,
+.content__filters-select-item {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-large);
+}
+
+.content__filter-results {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+}
