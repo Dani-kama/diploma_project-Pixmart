@@ -307,7 +307,8 @@ body {
 .side-filters__form-categories-tittle,
 .side-filters__form-format-tittle,
 .side-filters__form-style-tittle,
-.side-filters__form-style-price {
+.side-filters__form-style-price,
+.categories__list-tittle {
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-medium-large);
     font-weight: var(--font-weight-extra);
@@ -385,4 +386,18 @@ body {
     font-weight: var(--font-weight-extra);
     line-height: 26px;
     color: var(--color-titles);
+}
+
+.blog-details__post-time {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-titles);
+    opacity: 0.5;
+}
+
+.categories__item-link {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-medium);
+    color: var(--color-text-primary);
 }
