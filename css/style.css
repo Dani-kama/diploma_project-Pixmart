@@ -284,7 +284,8 @@ body {
     color: var(--color-text-secondary-alt);
 }
 
-.newsletter__form-button {
+.newsletter__form-button,
+.contact__button {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-large);
     line-height: var(--font-line-height-medium);
@@ -420,7 +421,8 @@ body {
 }
 
 .blog-details__content,
-.blog-details__item-content {
+.blog-details__item-content,
+.contact__text {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-small);
     line-height: 28px;
@@ -457,3 +459,6 @@ body {
     font-weight: 590;
     color: var(--color-brand);
 }
+
+/* contact page */
+
