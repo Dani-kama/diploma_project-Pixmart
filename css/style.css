@@ -448,3 +448,12 @@ body {
     font-weight: var(--font-weight-extra);
     line-height: 32px;
 }
+
+.blog-details__title-link,
+.blog__title-link {
+    font-family: ;
+    font-size: var(--font-size-small);
+    font-weight: 590;
+    color: var(--color-brand);
+
+}
