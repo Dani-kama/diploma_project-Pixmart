@@ -462,3 +462,13 @@ body {
 
 /* contact page */
 
+.contact__item-link {
+    font-size: var(--font-size-medium);
+    line-height: var(--font-line-height-large);
+    color: var(--color-text-primary);
+}
+
+.contact__working-days {
+    font-size: var(--font-size-medium);
+    line-height: var(--font-line-height-large);
+}
