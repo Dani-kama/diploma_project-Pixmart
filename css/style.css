@@ -142,7 +142,6 @@ body {
 .pricing-plan__title,
 .faq__title,
 .blog__title,
-.contact__title,
 .blog-details__cards-title {
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-subheadings);
@@ -285,7 +284,8 @@ body {
 }
 
 .newsletter__form-button,
-.contact__button {
+.contact__button,
+.contact__submit-button {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-large);
     line-height: var(--font-line-height-medium);
@@ -361,7 +361,8 @@ body {
     color: var(--color-text-primary);
 }
 
-.content__cards-category {
+.content__cards-category,
+.contact__address {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-small);
     color: var(--color-text-secondary);
@@ -471,4 +472,45 @@ body {
 .contact__working-days {
     font-size: var(--font-size-medium);
     line-height: var(--font-line-height-large);
+}
+
+.contact__name {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-extra);
+}
+
+.contact__form-label {
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-small);
+}
+
+.contact__form-input-name,
+.contact__form-input::placeholder {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-medium);
+    color: rgba(41, 52, 65, 0.7);
+}
+
+.contact__form-subject {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-medium);
+    color: var(--color-text-primary);
+}
+
+.contact__form-textarea::placeholder {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-medium);
+    color: var(--color-text-primary);
+}
+
+.contact__subscribe-policy-label,
+.contact__subscribe-policy-label {
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-small);
 }
