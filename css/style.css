@@ -142,7 +142,8 @@ body {
 .pricing-plan__title,
 .faq__title,
 .blog__title,
-.contact__title {
+.contact__title,
+.blog-details__cards-title {
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-subheadings);
     font-weight: var(--font-weight-extra);
@@ -400,4 +401,50 @@ body {
     font-weight: var(--font-weight-small);
     line-height: var(--font-line-height-medium);
     color: var(--color-text-primary);
+}
+
+.last-articles__item-link {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 26px;
+    color: var(--color-text-primary);
+}
+
+.last-articles__time {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-secondary-alt);
+}
+
+.blog-details__content,
+.blog-details__item-content {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-small);
+    line-height: 28px;
+    color: var(--color-text-secondary);
+}
+
+.blog-details__item-title {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-medium-large);
+    font-weight: var(--font-weight-extra);
+}
+
+.blog-details__picture-caption {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-titles);
+}
+
+.blog-details__content-link {
+    font-size: var(--font-size-small);
+    color: var(--color-brand);
+}
+
+.blog-details__quote {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-medium-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 32px;
 }
