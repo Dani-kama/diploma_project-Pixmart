@@ -362,6 +362,13 @@ body {
     color: var(--color-text-primary);
 }
 
+.content__price {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-extra);
+    line-height: 26px;
+}
+
 .content__cards-category,
 .contact__address {
     font-size: var(--font-size-small);
