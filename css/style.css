@@ -351,7 +351,8 @@ body {
     line-height: var(--font-line-height-small);
 }
 
-.content__card-title {
+.content__card-title,
+.blog-details__card-heading {
     font-family: var(--font-family-secondary);
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-extra);
@@ -411,7 +412,8 @@ body {
     color: var(--color-text-primary);
 }
 
-.last-articles__time {
+.last-articles__time,
+.blog-details__cards-time {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-small);
     color: var(--color-text-secondary-alt);
@@ -451,9 +453,7 @@ body {
 
 .blog-details__title-link,
 .blog__title-link {
-    font-family: ;
     font-size: var(--font-size-small);
     font-weight: 590;
     color: var(--color-brand);
-
 }
