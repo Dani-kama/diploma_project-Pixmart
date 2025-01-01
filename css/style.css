@@ -62,12 +62,19 @@ body {
     background-color: var(--color-bg-base);
 }
 
+.nav-menu__list {
+    list-style: none;
+}
+
 .nav-menu__link {
     line-height: var(--font-line-height-small);
     color: var(--color-text-primary);
+    text-transform: capitalize;
 }
 
 .header__search-filds::placeholder {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-extra-small);
     font-weight: var(--font-weight-small);
     color: var(--color-text-secondary-alt);
 }
