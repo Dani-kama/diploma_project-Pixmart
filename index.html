@@ -19,69 +19,65 @@
     <body>
         <header class="header">
             <div class="header__container">
-                <div class="header__wrap">
-                    <a class="header__link-svg" href="index.html">
-                        <svg
-                            class="header__logo"
-                            width="108"
-                            height="22"
-                        >
-                            <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
-                        </svg>
-                    </a>
-                    <nav class="nav-menu">
-                        <ul class="nav-menu__list">
-                            <li class="nav-menu__item">
-                                <a class="nav-menu__link" href="#">about</a>
-                            </li>
-                            <li class="nav-menu__item">
-                                <a class="nav-menu__link links" href="#">products</a>
-                            </li>
-                            <li class="nav-menu__item">
-                                <a class="nav-menu__link links" href="#">creators</a>
-                            </li>
-                            <li class="nav-menu__item">
-                                <a class="nav-menu__link links" href="#">blog</a>
-                            </li>
-                            <li class="nav-menu__item">
-                                <a class="nav-menu__link links" href="#">contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header__search-container">
-                    <form
-                        action="/#"
-                        class="header__form"
-                        method="get"
-                        role="search"
+                <a class="header__link-svg" href="index.html">
+                    <svg
+                        class="header__logo"
+                        width="108"
+                        height="22"
                     >
-                        <label class="header__form-label visually-hidden" for="id-header-search">
-                            Site search input fields
-                        </label>
-                        <input
-                            type="search"
-                            name="header-search"
-                            id="id-header-search"
-                            class="header__search-filds"
-                            placeholder="Search for Digital Assets"
-                            required
-                        >
-                    </form>
-                    <a
-                        href="/#"
-                        class="header__card-button"
-                        title="Go to the Cart"
+                        <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
+                    </svg>
+                </a>
+                <nav class="nav-menu">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#">about</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">products</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">creators</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">blog</a>
+                        </li>
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link links" href="#">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form
+                    action="/#"
+                    class="header__form"
+                    method="get"
+                    role="search"
+                >
+                    <label class="header__form-label visually-hidden" for="id-header-search">
+                        Site search input fields
+                    </label>
+                    <input
+                        type="search"
+                        name="header-search"
+                        id="id-header-search"
+                        class="header__search-filds"
+                        placeholder="Search for Digital Assets"
+                        required
                     >
-                        <svg
-                            class="header__button-image"
-                            width="22"
-                            height="22"
-                        >
-                            <use xlink:href="/img/sprite.svg#cart-icon"></use>
-                        </svg>
-                    </a>
-                </div>
+                </form>
+                <a
+                    href="/#"
+                    class="header__card-button"
+                    title="Go to the Cart"
+                >
+                    <svg
+                        class="header__button-image"
+                        width="24"
+                        height="24"
+                    >
+                        <use xlink:href="/img/sprite.svg#cart-icon"></use>
+                    </svg>
+                </a>
             </div>
         </header>
 
@@ -90,11 +86,14 @@
             <section class="hero">
                 <div class="hero__text-container">
                     <h1 class="hero__title">
-                        Craft Your Success with Our 
-                        <span class="hero__accent">
-                            Digital
-                        </span> 
-                        Assets
+                        <span class="block-line">Craft Your</span>
+                        <span class="block-line">Success with</span>
+                        <span class="block-line">Our
+                            <span class="hero__accent">
+                                Digital
+                            </span> 
+                            Assets
+                        </span>
                     </h1>
                     <p class="hero__slogan">
                         From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.
@@ -122,6 +121,12 @@
                 </div>
                 <figure class="hero__img-container">
                     <img
+                        src="/img/ornaments-min.png"
+                        alt="Ornaments"
+                        width="624"
+                        height="544"
+                    >
+                    <!-- <img
                         src="/img/ui_hero.webp"
                         alt="Ui design"
                         class="hero__image-ui"
@@ -141,7 +146,7 @@
                         class="hero__img-examples"
                         width="291"
                         height="164"
-                    >
+                    > -->
                 </figure>
             </section>
 
@@ -229,20 +234,6 @@
             </section>
 
             <section class="categories">
-                <div class="categories__text-container">
-                    <h2 class="categories__header">
-                        categories
-                    </h2>
-                    <h3 class="categories__title">
-                        Discover Assets for Every Projects
-                    </h3>
-                    <p class="categories__description">
-                        From fonts and icons to mockups and templates, our   comprehensive categories ensure that you find exactly what you need to your projects.
-                    </p>
-                    <a class="categories__button" href="#">
-                        Shop Now
-                    </a>
-                </div>
                 <div class="categories__items">
                     <a href="/#" class="categories__item-link">
                         <article class="categories__cards">
@@ -254,8 +245,10 @@
                                 <use xlink:href="/img/sprite.svg#ui-kits-ico"></use>
                             </svg>
                             <h4 class="categories__cards-title">Templates</h4>
-                            <p class="categories__cards-category">For all needs</p>
-                            <p class="categories__cards-category">Modern</p>
+                            <div class="categories__cards-text-wrap">
+                                <p class="categories__cards-category">For all needs</p>
+                                <p class="categories__cards-category">Modern</p>
+                            </div>
                         </article>
                     </a>
                     <a href="/#" class="categories__item-link">
@@ -268,8 +261,10 @@
                                 <use xlink:href="/img/sprite.svg#presentation-ico"></use>
                             </svg>
                             <h4 class="categories__cards-title">Slides</h4>
-                            <p class="categories__cards-category">Pitch-ready</p>
-                            <p class="categories__cards-category">Creative</p> 
+                            <div class="categories__cards-text-wrap">
+                                <p class="categories__cards-category">Pitch-ready</p>
+                                <p class="categories__cards-category">Creative</p>
+                            </div>
                         </article>
                     </a>
                     <a href="/#" class="categories__item-link">                    
@@ -282,8 +277,10 @@
                                 <use xlink:href="/img/sprite.svg#presentation-ico"></use>
                             </svg>
                             <h4 class="categories__cards-title">Lorem</h4>
-                            <p class="categories__cards-category">Lorem</p>
-                            <p class="categories__cards-category">Lorem</p>
+                            <div class="categories__cards-text-wrap">
+                                <p class="categories__cards-category">Lorem</p>
+                                <p class="categories__cards-category">Lorem</p>
+                            </div>
                         </article>
                     </a>
                     <a href="/#" class="categories__item-link">
@@ -296,8 +293,10 @@
                                 <use xlink:href="/img/sprite.svg#illustrations-ico"></use>
                             </svg>
                             <h4 class="categories__cards-title">Design Tools</h4>
-                            <p class="categories__cards-category">Easy to use</p>
-                            <p class="categories__cards-category">Unique</p>
+                            <div class="categories__cards-text-wrap">
+                                <p class="categories__cards-category">Easy to use</p>
+                                <p class="categories__cards-category">Unique</p>
+                            </div>
                         </article>
                     </a>
                     <a href="/#" class="categories__item-link">
@@ -310,8 +309,10 @@
                                 <use xlink:href="/img/sprite.svg#social-media-ico"></use>
                             </svg>
                             <h4 class="categories__cards-title">App Icons</h4>
-                            <p class="categories__cards-category">High-quality</p>
-                            <p class="categories__cards-category">Elegant</p>
+                            <div class="categories__cards-text-wrap">
+                                <p class="categories__cards-category">High-quality</p>
+                                <p class="categories__cards-category">Elegant</p>
+                            </div>
                         </article>
                     </a>
                     <a href="/#" class="categories__item-link">
@@ -324,9 +325,25 @@
                                 <use xlink:href="/img/sprite.svg#social-media-ico"></use>
                             </svg>
                             <h4 class="categories__cards-title">Lorem</h4>
-                            <p class="categories__cards-category">Lorem</p>
-                            <p class="categories__cards-category">Lorem</p>
+                            <div class="categories__cards-text-wrap">
+                                <p class="categories__cards-category">Lorem</p>
+                                <p class="categories__cards-category">Lorem</p>
+                            </div>
                         </article>
+                    </a>
+                </div>
+                <div class="categories__text-container">
+                    <h2 class="categories__header">
+                        categories
+                    </h2>
+                    <h3 class="categories__title">
+                        Discover Assets for Every Projects
+                    </h3>
+                    <p class="categories__description">
+                        From fonts and icons to mockups and templates, our   comprehensive categories ensure that you find exactly what you need to your projects.
+                    </p>
+                    <a class="categories__button" href="#">
+                        Shop Now
                     </a>
                 </div>
             </section>
