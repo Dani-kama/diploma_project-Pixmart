@@ -342,6 +342,35 @@ figure.hero__img-container {
     clip-path: inset(120px 0px 120px 0px);
     margin: -120px 0;
     padding: 0px 74px;
+    position: relative;
+}
+
+.categories__item-link {
+    position: relative;
+}
+
+.categories__item-link:nth-of-type(3):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(181deg, rgba(240, 246, 253, 60%) 0%, rgba(255, 255, 255, 100%) 100%);
+    z-index: 2;
+    border-radius: 20px 20px 0 0;
+    width: 220px;
+    height: 60px;
+}
+
+.categories__item-link:nth-of-type(6):before {
+    content: "";
+    position: absolute;
+    top: 120px;
+    left: 0;
+    background: linear-gradient(359deg, rgba(240, 246, 253, 60%) 0%, rgba(255, 255, 255, 100%) 100%);
+    z-index: 2;
+    border-radius: 0 0 20px 20px;
+    width: 220px;
+    height: 60px;
 }
 
 .categories__item-link:nth-of-type(1) {
