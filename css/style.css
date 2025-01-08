@@ -1006,6 +1006,7 @@ article.categories__cards {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 120px;
 }
 
 .footer__logo-description {
@@ -1014,7 +1015,6 @@ article.categories__cards {
     align-items: flex-start;
     gap: 20px;
     width: 320px;
-    height: 146px;
 }
 
 .footer__logo {
@@ -1059,6 +1059,14 @@ article.categories__cards {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.footer__links-lists-items {
+    color: var(--color-text-secondary);
+    font-family: Libre Franklin;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    line-height: var(--font-line-height-medium);
 }
 
 .newsletter {
