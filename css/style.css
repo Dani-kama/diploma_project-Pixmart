@@ -1061,3 +1061,64 @@ article.categories__cards {
     gap: 8px;
 }
 
+.newsletter {
+    display: flex;
+    margin-top: 72px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__social-media-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.footer__social-media-item {
+    border: 2px solid rgb(255 0 0);
+    border-radius: 8px;
+    width: 64px;
+    height: 64px;
+    align-content: flex-end;
+    padding-inline: 18px;
+}
+
+.newsletter__form {
+    display: flex;
+    flex-direction: row;
+}
+
+.newsletter__form-label {
+    display: inline-block;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-extra);
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 233px;
+}
+
+.newsletter__emal-input {
+    color: var(--color-text-secondary-alt);
+    width: 260px;
+    height: 64px;
+    border-radius: 8px;
+    border-color: rgba(29, 54, 83, 0.17);
+    font-weight: var(--font-weight-small);
+    font-size: var(--font-size-small);
+    line-height: var(--font-line-height-medium);
+    padding: 17px;
+    margin-left: 9px;
+}
+
+.newsletter__form-button {
+    max-width: 157px;
+    width: 100%;
+    margin-left: 8px;
+    padding: 23px 30px;
+    background-color: var(--color-brand);
+    border-radius: 8px;
+    border: none;
+    color: var(--color-brand-buttons);
+}
+
