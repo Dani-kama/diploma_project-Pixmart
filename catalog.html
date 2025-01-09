@@ -17,81 +17,73 @@
     </head>
 
     <body>
-        <header class="header">
-            <div class="header__wrap">
-                <a class="header__link-svg" href="index.html">
-                    <svg
-                        class="header__logo"
-                        width="107.43"
-                        height="20.77"
-                    >
-                        <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
-                    </svg>
-                </a>
-                <nav class="nav-menu">
-                    <ul class="nav-menu__list">
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">about</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">products</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">creators</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">blog</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__search-container">
-                <form
-                    action="/#"
-                    class="header__form"
-                    method="get"
-                    role="search"
+        <header class="header container">
+            <a class="header__link-svg" href="index.html">
+                <svg
+                    class="header__logo"
+                    width="108"
+                    height="22"
                 >
-                    <label class="header__form-label visually-hidden" for="id-header-search">
-                        Site search input fields
-                    </label>
-                    <input
-                        type="search"
-                        name="header-search"
-                        id="id-header-search"
-                        class="header__search-filds"
-                        placeholder="Search for Digital Assets"
-                        required
-                    >
-                </form>
-                <a
-                    href="/#"
-                    class="header__card-button"
-                    title="Go to the Cart"
+                    <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link" href="#">about</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">products</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">creators</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">blog</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <form
+                action="/#"
+                class="header__form"
+                method="get"
+                role="search"
+            >
+                <label class="header__form-label visually-hidden" for="id-header-search">
+                    Site search input fields
+                </label>
+                <input
+                    type="search"
+                    name="header-search"
+                    id="id-header-search"
+                    class="header__search-filds"
+                    placeholder="Search for Digital Assets"
+                    required
                 >
-                    <svg
-                        class="header__button-image"
-                        width="22"
-                        height="22"
-                    >
-                        <use xlink:href="/img/sprite.svg#cart-icon"></use>
-                    </svg>
-                </a>
-            </div>
+            </form>
+            <a
+                href="/#"
+                class="header__card-button"
+                title="Go to the Cart"
+            >
+                <svg
+                    class="header__button-image"
+                    width="24"
+                    height="24"
+                >
+                    <use xlink:href="/img/sprite.svg#cart-icon"></use>
+                </svg>
+            </a>
         </header>
 
-        <main>
+        <main class="catalog_main">
 
             <section class="catalog">
-                <h1 class="catalog__heading">
-                    Explore Top 
-                    <span class="hero__accent">
-                        UI Kits
-                    </span> 
-                    Design Assets
+                <h1 class="catalog__heading">Explore Top
+                    <span class="hero__accent">UI Kits</span> Design Assets
                 </h1>
             </section>
 
@@ -380,72 +372,74 @@
 
             <div class="content">
                 <div class="content__filters-buttons">
-                    <label for="id-sort-by" class="content__filters-select-tittle visually-hidden">
-                        Sort by
-                    </label>
-                    <select
-                        name="sort-by"
-                        id="id-sort-by"
-                        class="content__filters-select-input"
-                        form="id-form-filters"
-                    >
-                        <option value="best-seller" class="content__filters-select-item">
-                            Best Seller
-                        </option>
-                        <option value="newest" class="content__filters-select-item">
-                            Newest
-                        </option>
-                        <option value="price" class="content__filters-select-item">
-                            Price
-                        </option>
-                        <option value="lorem" class="content__filters-select-item">
-                            Lorem
-                        </option>
-                    </select>
-                    <div class="content__view">
-                        <p class="content__filter-results">
-                            Showing
-                            <span class="content__results-shown" id="results-shown">12</span>
-                            out of
-                            <span class="content__results-of" id="results-of">120</span>
-                            results.
-                        </p>
-                        <button
-                            type="button"
-                            class="content__view-button"
-                            aria-controls="id-content__product-list"
-                            aria-label="button for show grid"
-                            title="show in grid"
-                            data-action=""
-                            id="id-product-grid"
+                    <div class="content__filters-view-wrap">
+                        <label for="id-sort-by" class="content__filters-select-tittle visually-hidden">
+                            Sort by
+                        </label>
+                        <select
+                            name="sort-by"
+                            id="id-sort-by"
+                            class="content__filters-select-input"
+                            form="id-form-filters"
                         >
-                            <svg
-                                class="content__view-button-img"
-                                width="24"
-                                height="24"
-                                aria-hidden="true"
+                            <option value="best-seller" class="content__filters-select-item">
+                                Best Seller
+                            </option>
+                            <option value="newest" class="content__filters-select-item">
+                                Newest
+                            </option>
+                            <option value="price" class="content__filters-select-item">
+                                Price
+                            </option>
+                            <option value="lorem" class="content__filters-select-item">
+                                Lorem
+                            </option>
+                        </select>
+                        <div class="content__view">
+                            <p class="content__filter-results">
+                                Showing
+                                <span class="content__results-shown" id="results-shown">12</span>
+                                out of
+                                <span class="content__results-of" id="results-of">120</span>
+                                results.
+                            </p>
+                            <button
+                                type="button"
+                                class="content__view-button"
+                                aria-controls="id-content__product-list"
+                                aria-label="button for show grid"
+                                title="show in grid"
+                                data-action=""
+                                id="id-product-grid"
                             >
-                                <use xlink:href="/img/sprite.svg#grid-ico"></use>
-                            </svg>
-                        </button>
-                        <button
-                            type="button"
-                            class="content__view-button"
-                            aria-controls="id-content__product-list"
-                            aria-label="button for show list"
-                            title="show in list"
-                            data-action=""
-                            id="id-product-list"
-                        >
-                            <svg
-                                class="content__view-button-img"
-                                width="24"
-                                height="24"
-                                aria-hidden="true"
+                                <svg
+                                    class="content__view-button-img"
+                                    width="24"
+                                    height="24"
+                                    aria-hidden="true"
+                                >
+                                    <use xlink:href="/img/sprite.svg#grid-ico"></use>
+                                </svg>
+                            </button>
+                            <button
+                                type="button"
+                                class="content__view-button"
+                                aria-controls="id-content__product-list"
+                                aria-label="button for show list"
+                                title="show in list"
+                                data-action=""
+                                id="id-product-list"
                             >
-                                <use xlink:href="/img/sprite.svg#list-ico"></use>
-                            </svg>
-                        </button>
+                                <svg
+                                    class="content__view-button-img"
+                                    width="24"
+                                    height="24"
+                                    aria-hidden="true"
+                                >
+                                    <use xlink:href="/img/sprite.svg#list-ico"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <ul class="content__tags-list">
                         <li class="content__tag-item">
@@ -709,7 +703,7 @@
                             <h2 class="content__card-title">Caring Hearts</h2>
                         </a>
                         <div class="content__card-description">
-                            <p class="content__cards-category">Healthcar</p>
+                            <p class="content__cards-category">Healthcare</p>
                             <p class="content__cards-category">Support</p>
                         </div>
                         <div class="content__price-buttons">
@@ -1128,181 +1122,183 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__content">
-                <div class="footer__logo-description">
-                    <svg
-                        class="footer__logo"
-                        width="300"
-                        height="50.19"
-                    >
-                        <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
-                    </svg>
-                    <p class="footer__logo-description">Your premium digital assets solution with high  quality and comprehensive range of products and services.</p>
-                </div>
-                <div class="footer__links-sections">
-                    <section class="footer__links-lists">
-                        <h2 class="footer__list-header">Company</h2>
-                        <ul class="footer__list">
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Homepage v1</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Homepage v2</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Homepage v3</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">About Us</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">About Us</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Blog Articles</a>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="footer__links-lists">
-                        <h2 class="footer__list-header">Products</h2>
-                        <ul class="footer__list">
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Website</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Mobile App</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Social Media Feeds</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Presentation</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Product Mockups</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Illustrations</a>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="footer__links-lists">
-                        <h2 class="footer__list-header">Account</h2>
-                        <ul class="footer__list">
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Your Cart</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Check Out</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Refund Policy</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Company Policy</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Send A Message</a>
-                            </li>
-                            <li class="footer__links-lists-items">
-                                <a href="#" class="footer__links">Customer Support</a>
-                            </li>
-                        </ul>
-                    </section>
-
-                </div>
-            </div>
-            <div class="newsletter">
-                <ul class="footer__social-media-list">
-                    <li class="footer__social-media-item">
-                        <a
-                            href="#"
-                            class="footer__social-media-links"
-                            target="_blank"
-                            rel="noopener noreferrer"
+            <div class="footer__main-wrap">
+                <div class="footer__content">
+                    <div class="footer__logo-description">
+                        <svg
+                            class="footer__logo"
+                            width="300"
+                            height="50.19"
                         >
+                            <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
+                        </svg>
+                        <p class="footer__logo-description">Your premium digital assets solution with high  quality and comprehensive range of products and services.</p>
+                    </div>
+                    <div class="footer__links-sections">
+                        <section class="footer__links-lists">
+                            <h2 class="footer__list-header">Company</h2>
+                            <ul class="footer__list">
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Homepage v1</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Homepage v2</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Homepage v3</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">About Us</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">About Us</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Blog Articles</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="footer__links-lists">
+                            <h2 class="footer__list-header">Products</h2>
+                            <ul class="footer__list">
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Website</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Mobile App</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Social Media Feeds</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Presentation</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Product Mockups</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Illustrations</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="footer__links-lists">
+                            <h2 class="footer__list-header">Account</h2>
+                            <ul class="footer__list">
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Your Cart</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Check Out</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Refund Policy</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Company Policy</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Send A Message</a>
+                                </li>
+                                <li class="footer__links-lists-items">
+                                    <a href="#" class="footer__links">Customer Support</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <ul class="footer__social-media-list">
+                        <li class="footer__social-media-item">
+                            <a
+                                href="#"
+                                class="footer__social-media-links"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    class="footer__social-media-icon"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use xlink:href="/img/sprite.svg#x-twitter-ico"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-media-item">
+                            <a
+                                href="#"
+                                class="footer__social-media-links"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                             <svg
                                 class="footer__social-media-icon"
                                 width="24"
                                 height="24"
                             >
-                                <use xlink:href="/img/sprite.svg#x-twitter-ico"></use>
+                                <use xlink:href="/img/sprite.svg#facebook-ico"></use>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-media-item">
-                        <a
-                            href="#"
-                            class="footer__social-media-links"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                        <svg
-                            class="footer__social-media-icon"
-                            width="24"
-                            height="24"
-                        >
-                            <use xlink:href="/img/sprite.svg#facebook-ico"></use>
-                        </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-media-item">
-                        <a
-                            href="#"
-                            class="footer__social-media-links"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                        <svg
-                            class="footer__social-media-icon"
-                            width="24"
-                            height="24"
-                        >
-                            <use xlink:href="/img/sprite.svg#telegram"></use>
-                        </svg>
-                        </a>
-                    </li>
-                </ul>
-                <form
-                    action="#"
-                    method="post"
-                    class="newsletter__form"
-                >
-                    <label for="id-footer-user-email" class="newsletter__form-label">
-                        Subscribe to Design Newsletter
-                    </label>
-                    <input
-                        type="email"
-                        name="footer-user-email"
-                        id="id-footer-user-email"
-                        class="newsletter__emal-input"
-                        placeholder="Enter your email address ..."
-                        required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    >
-                    <button type="submit" class="newsletter__form-button">
-                        Subscribe
-                    </button>
-                </form>
-            </div>
-            <div class="footer__copyright-container">
-                <nav class="footer__copyright-navigation">
-                    <ul class="footer__copyright-list">
-                        <li class="footer__copyright-item">
-                            <a href="#" class="footer__copyright-links">Privacy Policy</a>
+                            </a>
                         </li>
-                        <li class="footer__copyright-item">
-                            <a href="#" class="footer__copyright-links">Terms and Condition</a>
-                        </li>
-                        <li class="footer__copyright-item">
-                            <a href="#" class="footer__copyright-links">Site Map</a>
+                        <li class="footer__social-media-item">
+                            <a
+                                href="#"
+                                class="footer__social-media-links"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                            <svg
+                                class="footer__social-media-icon"
+                                width="24"
+                                height="24"
+                            >
+                                <use xlink:href="/img/sprite.svg#telegram"></use>
+                            </svg>
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <p class="footer__copyright">Copyright &copy; 2024 Pixmart. All rights reserved.</p>
+                    <form
+                        action="#"
+                        method="post"
+                        class="newsletter__form"
+                    >
+                        <label for="id-footer-user-email" class="newsletter__form-label">
+                            Subscribe to Design Newsletter
+                        </label>
+                        <input
+                            type="email"
+                            name="footer-user-email"
+                            id="id-footer-user-email"
+                            class="newsletter__emal-input"
+                            placeholder="Enter your email address ..."
+                            required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        >
+                        <button type="submit" class="newsletter__form-button">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
             </div>
+            <div class="footer__copyright-container">
+                    <nav class="footer__copyright-navigation">
+                        <ul class="footer__copyright-list">
+                            <li class="footer__copyright-item">
+                                <a href="#" class="footer__copyright-links">Privacy Policy</a>
+                            </li>
+                            <li class="footer__copyright-item">
+                                <a href="#" class="footer__copyright-links">Terms and Condition</a>
+                            </li>
+                            <li class="footer__copyright-item">
+                                <a href="#" class="footer__copyright-links">Site Map</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="footer__copyright">Copyright &copy; 2024 Pixmart. All rights reserved.</p>
+                </div>
         </footer>
     </body>
 </html>
