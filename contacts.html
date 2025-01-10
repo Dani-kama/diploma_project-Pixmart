@@ -13,163 +13,164 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/style.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v3.9.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v3.9.1/mapbox-gl.css' rel='stylesheet' />
+        <script src="/js/javascript.js" defer></script>
         <meta name="color-scheme" content="light">
     </head>
 
     <body>
-        <header class="header">
-            <div class="header__wrap">
-                <a class="header__link-svg" href="index.html">
-                    <svg
-                        class="header__logo"
-                        width="107.43"
-                        height="20.77"
-                    >
-                        <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
-                    </svg>
-                </a>
-                <nav class="nav-menu">
-                    <ul class="nav-menu__list">
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">about</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">products</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">creators</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">blog</a>
-                        </li>
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link links" href="#">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__search-container">
-                <form
-                    action="/#"
-                    class="header__form"
-                    method="get"
-                    role="search"
+        <header class="header container">
+            <a class="header__link-svg" href="index.html">
+                <svg
+                    class="header__logo"
+                    width="108"
+                    height="22"
                 >
-                    <label class="header__form-label visually-hidden" for="id-header-search">
-                        Site search input fields
-                    </label>
-                    <input
-                        type="search"
-                        name="header-search"
-                        id="id-header-search"
-                        class="header__search-filds"
-                        placeholder="Search for Digital Assets"
-                        required
-                    >
-                </form>
-                <a
-                    href="/#"
-                    class="header__card-button"
-                    title="Go to the Cart"
+                    <use xlink:href="/img/sprite.svg#pixmart-logo"></use>
+                </svg>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-menu__list">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link" href="#">about</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">products</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">creators</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">blog</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link links" href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <form
+                action="/#"
+                class="header__form"
+                method="get"
+                role="search"
+            >
+                <label class="header__form-label visually-hidden" for="id-header-search">
+                    Site search input fields
+                </label>
+                <input
+                    type="search"
+                    name="header-search"
+                    id="id-header-search"
+                    class="header__search-filds"
+                    placeholder="Search for Digital Assets"
+                    required
                 >
-                    <svg
-                        class="header__button-image"
-                        width="22"
-                        height="22"
-                    >
-                        <use xlink:href="/img/sprite.svg#cart-icon"></use>
-                    </svg>
-                </a>
-            </div>
+            </form>
+            <a
+                href="/#"
+                class="header__card-button"
+                title="Go to the Cart"
+            >
+                <svg
+                    class="header__button-image"
+                    width="24"
+                    height="24"
+                >
+                    <use xlink:href="/img/sprite.svg#cart-icon"></use>
+                </svg>
+            </a>
         </header>
 
         <main>
 
             <section class="contact">
-                <div class="contact__title-wrap">
-                    <h2 class="contact__header">CONTACT</h2>
-                    <h3 class="contact__title">
-                        Get in Touch with Us
-                    </h3>
-                    <p class="contact__text">
-                        We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.
-                    </p>
-                </div>
-                <button class="contact__button">
-                    Shop Now
-                </button>
-                <ul class="contact__information-list">
-                    <li class="contact__information-item">
-                        <a
-                            href="tel:+15551234567"
-                            target="_blank"
-                            class="contact__item-link"
-                        >
+                <div class="contact__flex-wrap-column">
+                    <div class="contact__title-wrap">
+                        <h2 class="contact__header">CONTACT</h2>
+                        <h3 class="contact__title">Get in Touch
+                            with Us
+                        </h3>
+                        <p class="contact__text">
+                            We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.
+                        </p>
+                    </div>
+                    <button class="contact__button">
+                        Shop Now
+                    </button>
+                    <ul class="contact__information-list">
+                        <li class="contact__information-item">
+                            <a
+                                href="tel:+15551234567"
+                                target="_blank"
+                                class="contact__item-link"
+                            >
+                                <svg
+                                    class="contact__item-ico"
+                                    width="22"
+                                    height="22"
+                                >
+                                    <use xlink:href="/img/sprite.svg#phone-ico"></use>
+                                </svg>
+                                +1 (555) 123-4567
+                            </a>
+                        </li>
+                        <li class="contact__information-item">
+                            <a
+                                href="mailto:support@pixmart.com?subject=Support%20Request&body=Hello%2C%20I%20need%20help%20with..."
+                                class="contact__item-link"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="contact__item-ico"
+                                    width="22"
+                                    height="18"
+                                >
+                                    <use xlink:href="/img/sprite.svg#email-ico"></use>
+                                </svg>
+                                support@pixmart.com
+                            </a>
+                        </li>
+                        <li class="contact__information-item">
                             <svg
                                 class="contact__item-ico"
                                 width="22"
                                 height="22"
                             >
-                                <use xlink:href="/img/sprite.svg#phone-ico"></use>
+                                <use xlink:href="/img/sprite.svg#clock-ico"></use>
                             </svg>
-                            +1 (555) 123-4567
-                        </a>
-                    </li>
-                    <li class="contact__information-item">
-                        <a
-                            href="mailto:support@pixmart.com?subject=Support%20Request&body=Hello%2C%20I%20need%20help%20with..."
-                            class="contact__item-link"
-                            target="_blank"
-                        >
+                            <span class="contact__working-days">
+                                Monday to Friday
+                            :
+                            <time class="contact__working-start" datetime="09:00">
+                                9 AM
+                            </time> - 
+                            <time class="contact__working-end" datetime="17:00">
+                                5 PM
+                            </time>
+                                EST
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="contact__map-wrap">
+                        <div id="map" class="contact__map"></div>
+                        <div class="contact__location-text-wrap">
                             <svg
-                                class="contact__item-ico"
-                                width="22"
-                                height="18"
+                                class="contact__location-img"
+                                width="18"
+                                height="22"
                             >
-                                <use xlink:href="/img/sprite.svg#email-ico"></use>
+                                <use xlink:href="/img/sprite.svg#location-ico"></use>
                             </svg>
-                            support@pixmart.com
-                        </a>
-                    </li>
-                    <li class="contact__information-item">
-                        <svg
-                            class="contact__item-ico"
-                            width="22"
-                            height="22"
-                        >
-                            <use xlink:href="/img/sprite.svg#clock-ico"></use>
-                        </svg>
-                        <span class="contact__working-days">
-                            Monday to Friday
-                        :
-                        <time class="contact__working-start" datetime="09:00">
-                            9 AM
-                        </time> - 
-                        <time class="contact__working-end" datetime="17:00">
-                            5 PM
-                        </time>
-                            EST
-                        </span>
-                    </li>
-                </ul>
-                <div class="contact__map-wrap">
-                    <!-- <iframe class="contact__map">
-                        map iframe code in test page
-                    </iframe> -->
-                    <div class="contact__location-text-wrap">
-                        <svg
-                            class="contact__location-img"
-                            width="18"
-                            height="22"
-                        >
-                            <use xlink:href="/img/sprite.svg#location-ico"></use>
-                        </svg>
-                        <p class="contact__name">
-                            PixMart HQ
-                        </p>
-                        <p class="contact__address">
-                            123 Creative Ave, Design City, 45678
-                        </p>
+                            <div class="contact__map-point-wrap">
+                                <p class="contact__name">
+                                    PixMart HQ
+                                </p>
+                                <p class="contact__address">
+                                    123 Creative Ave, Design City, 45678
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="contact__form-wrap">
@@ -235,15 +236,14 @@
                             required
                             placeholder="Enter your message ..."
                             rows="6"
-                        >
-                        </textarea>
+                        ></textarea>
                     </form>
                     <div class="contact__footer-form">
                         <div class="contact__policy-wrap">
                             <input
                                 type="checkbox"
                                 id="id-subscribe-me"
-                                class="contact__subscribe-policy-check"
+                                class="visually-hidden contact__subscribe-policy-check"
                                 name="subscribe-me"
                                 form="id-contact-form"
                             >
@@ -253,7 +253,7 @@
                             <input
                                 type="checkbox"
                                 id="id-policy"
-                                class="contact__subscribe-policy-check"
+                                class="visually-hidden contact__subscribe-policy-check"
                                 name="subscribe-policy"
                                 form="id-contact-form"
                                 required
@@ -268,7 +268,7 @@
                             class="contact__submit-button"
                             form="id-contact-form"
                         >
-                            Send Message
+                        Send Message
                         </button>
                     </div>
                 </div>
