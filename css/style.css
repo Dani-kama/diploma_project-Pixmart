@@ -334,17 +334,14 @@ span.hero__accent {
 
 .hero__buttons:focus-visible {
     outline: 4px solid rgb(56, 146, 243);
-    border-radius: 8px;
     background: rgb(2, 101, 220);
 }
 
 .hero__buttons:active {
-    border-radius: 8px;
     background: rgb(0, 84, 182);
 }
 
 .hero__buttons:disabled {
-    border-radius: 8px;
     background: rgba(29, 54, 83, 0.17);
     color: rgba(34, 52, 73, 0.4);
 }
@@ -366,19 +363,16 @@ span.hero__accent {
 
 .hero__buttons-social:hover {
     outline: 2px solid rgba(41, 77, 117, 0.09);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
 .hero__buttons-social:focus-visible {
     outline: 4px solid rgb(56, 146, 243);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
 .hero__buttons-social:active {
     outline: 2px solid rgba(41, 77, 117, 0.09);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
@@ -632,17 +626,14 @@ article.categories__cards:hover svg {
 
 .categories__button:focus-visible {
     outline: 4px solid rgb(56, 146, 243);
-    border-radius: 8px;
     background: rgb(2, 101, 220);
 }
 
 .categories__button:active {
-    border-radius: 8px;
     background: rgb(0, 84, 182);
 }
 
 .categories__button:disabled {
-    border-radius: 8px;
     background: rgba(29, 54, 83, 0.17);
     color: rgba(34, 52, 73, 0.4);
 }
@@ -699,21 +690,18 @@ article.categories__cards:hover svg {
 .trending__button-prev:hover,
 .trending__button-next:hover {
     outline: 2px solid rgba(41, 77, 117, 0.09);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
 .trending__button-prev:focus-visible,
 .trending__button-next:focus-visible {
     outline: 4px solid rgb(56, 146, 243);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
 .trending__button-prev:active,
 .trending__button-next:active {
     outline: 2px solid rgba(41, 77, 117, 0.09);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
@@ -721,7 +709,6 @@ article.categories__cards:hover svg {
 .trending__button-next:disabled {
     background: rgba(255, 255, 255, 0.17);
     outline: 2px solid rgba(34, 52, 73, 0.4);
-    border-radius: 8px;
     background: rgba(29, 54, 83, 0.17);
     color: rgba(34, 52, 73, 0.4);
 }
@@ -848,17 +835,14 @@ article.categories__cards:hover svg {
 
 .trending__card-link:focus-visible {
     outline: 4px solid rgb(56, 146, 243);
-    border-radius: 8px;
     background: rgb(2, 101, 220);
 }
 
 .trending__card-link:active {
-    border-radius: 8px;
     background: rgb(0, 84, 182);
 }
 
 .trending__card-link:disabled{
-    border-radius: 8px;
     background: rgba(29, 54, 83, 0.17);
     color: rgba(34, 52, 73, 0.4);
 }
@@ -1053,17 +1037,14 @@ article.categories__cards:hover svg {
 
 .pricing-plan__cards-link:focus-visible {
     outline: 4px solid rgb(56, 146, 243);
-    border-radius: 8px;
     background: rgb(2, 101, 220);
 }
 
 .pricing-plan__cards-link:active {
-    border-radius: 8px;
     background: rgb(0, 84, 182);
 }
 
 .pricing-plan__cards-link:disabled {
-    border-radius: 8px;
     background: rgba(29, 54, 83, 0.17);
     color: rgba(34, 52, 73, 0.4);
 }
@@ -1118,19 +1099,16 @@ article.categories__cards:hover svg {
 
 .faq__header-link:hover {
     outline: 2px solid rgba(41, 77, 117, 0.09);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
 .faq__header-link:focus-visible {
     outline: 4px solid rgb(56, 146, 243);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
 .faq__header-link:active {
     outline: 2px solid rgba(41, 77, 117, 0.09);
-    border-radius: 8px;
     background: rgba(41, 77, 117, 0.09);
 }
 
@@ -1384,11 +1362,32 @@ article.categories__cards:hover svg {
 }
 
 .footer__links-lists-items {
+    line-height: 0;
+}
+
+.footer__links {
     color: var(--color-text-secondary);
     font-family: Libre Franklin;
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-small);
     line-height: var(--font-line-height-medium);
+}
+
+.footer__links:hover {
+    color: rgb(56, 146, 243);
+}
+
+.footer__links:focus-visible {
+    outline: 4px solid rgb(56, 146, 243);
+    border-radius: 5px;
+}
+
+.footer__links:active {
+    color: rgb(0, 84, 182);
+}
+
+.footer__links:disabled {
+    color: rgba(34, 52, 73, 0.4);
 }
 
 .newsletter {
@@ -1405,13 +1404,39 @@ article.categories__cards:hover svg {
     align-items: flex-start;
 }
 
-.footer__social-media-item {
-    border: 2px solid rgb(255 0 0);
+
+.footer__social-media-links {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    outline: 2px solid rgba(29, 54, 83, 0.17);
     border-radius: 8px;
     width: 64px;
     height: 64px;
-    align-content: flex-end;
-    padding-inline: 18px;
+    padding: 18px;
+}
+
+.footer__social-media-links:hover {
+    outline: 2px solid rgba(41, 77, 117, 0.09);
+    background: rgba(41, 77, 117, 0.09);
+}
+
+.footer__social-media-links:focus-visible {
+    outline: 4px solid rgb(56, 146, 243);
+    background: rgba(41, 77, 117, 0.09);
+}
+
+.footer__social-media-links:active {
+    outline: 2px solid rgba(41, 77, 117, 0.09);
+    background: rgba(41, 77, 117, 0.09);
+}
+
+.footer__social-media-links:disabled {
+    background: rgba(255, 255, 255, 0.17);
+    outline: 2px solid rgba(34, 52, 73, 0.4);
+    background: rgba(29, 54, 83, 0.17);
 }
 
 .newsletter__form {
@@ -1428,7 +1453,7 @@ article.categories__cards:hover svg {
     max-width: 233px;
 }
 
-.newsletter__emal-input {
+.newsletter__email-input {
     color: var(--color-text-secondary-alt);
     width: 260px;
     height: 64px;
@@ -1439,6 +1464,26 @@ article.categories__cards:hover svg {
     line-height: var(--font-line-height-medium);
     padding: 17px;
     margin-left: 9px;
+}
+
+.newsletter__email-input:hover {
+
+}
+
+.newsletter__email-input:focus-visible {
+    
+}
+
+.newsletter__email-input:invalid {
+    
+}
+
+.newsletter__email-input:valid {
+    
+}
+
+.newsletter__email-input:disabled {
+    
 }
 
 .newsletter__form-button {
@@ -1452,7 +1497,29 @@ article.categories__cards:hover svg {
     color: var(--color-brand-buttons);
 }
 
-.footer__copyright-container::before {
+.newsletter__form-button:hover {
+    background: rgb(56, 146, 243);
+}
+
+.newsletter__form-button:focus-visible {
+    outline: 4px solid rgb(56, 146, 243);
+    background: rgb(2, 101, 220);
+}
+
+.newsletter__form-button:active {
+    background: rgb(0, 84, 182);
+}
+
+.newsletter__form-button:disabled {
+    background: rgba(29, 54, 83, 0.17);
+    color: rgba(34, 52, 73, 0.4);
+}
+
+.footer__bottom-bar {
+    position: relative;
+}
+
+.footer__bottom-bar::before {
     content: '';
     position: absolute;
     top: 0;
@@ -1464,7 +1531,6 @@ article.categories__cards:hover svg {
 }
 
 .footer__copyright-container {
-    position: relative;
     padding-top: 24px;
     height: 72px;
     display: flex;
@@ -1473,6 +1539,8 @@ article.categories__cards:hover svg {
     align-items: flex-start;
     margin-top: 55px;
     padding-inline: 80px;
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 .footer__copyright-list {
@@ -1488,6 +1556,12 @@ article.categories__cards:hover svg {
     font-weight: var(--font-weight-small);
     line-height: var(--font-line-height-medium);
 }
+
+.footer__copyright-item:not(:last-child)::after {
+    content: ' |';
+    padding-left: 6px;
+}
+
 
 .footer__copyright {
     color: rgba(231, 238, 247, 0.66);
