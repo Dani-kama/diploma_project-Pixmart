@@ -1300,6 +1300,7 @@ article.categories__cards:hover svg {
 
 .footer {
     margin-top: 120px;
+    overflow-x: hidden;
 }
 
 .footer__content {
@@ -1518,19 +1519,10 @@ article.categories__cards:hover svg {
 }
 
 .footer__bottom-bar {
-    position: relative;
-    width: 100vw;
-}
-
-.footer__bottom-bar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%; 
-    width: 100vw;
     background-color: var(--color-bg-base-invert);
-    z-index: -1;
+    width: 100vw;
+    margin-inline-start: 50%;
+    transform: translateX(-50%);
 }
 
 .footer__copyright-container {
