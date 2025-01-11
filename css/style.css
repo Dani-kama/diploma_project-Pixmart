@@ -1464,26 +1464,28 @@ article.categories__cards:hover svg {
     line-height: var(--font-line-height-medium);
     padding: 17px;
     margin-left: 9px;
+    background: rgb(255, 255, 255);
 }
 
 .newsletter__email-input:hover {
-
+    border: 2px solid rgb(56, 146, 243);
 }
 
 .newsletter__email-input:focus-visible {
-    
+    border: 3px solid rgb(56, 146, 243);
 }
 
-.newsletter__email-input:invalid {
-    
+.newsletter__email-input:invalid:not(:placeholder-shown) {
+    border: 1px solid rgb(234, 56, 41);
 }
 
 .newsletter__email-input:valid {
-    
+    border: 1px solid rgba(29, 54, 83, 0.17);
 }
 
 .newsletter__email-input:disabled {
-    
+    border: 1px solid rgba(29, 54, 83, 0.17);
+    background: rgba(41, 77, 117, 0.09);
 }
 
 .newsletter__form-button {
@@ -1517,6 +1519,7 @@ article.categories__cards:hover svg {
 
 .footer__bottom-bar {
     position: relative;
+    width: 100vw;
 }
 
 .footer__bottom-bar::before {
