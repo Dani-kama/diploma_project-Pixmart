@@ -1047,7 +1047,7 @@ article.categories__cards:hover svg {
 }
 
 .pricing-plan__cards-link:hover {
-    background: rgb(56, 146, 243);
+    background: rgb(2, 101, 220);
     color: var(--color-brand-buttons);
 }
 
@@ -1144,9 +1144,23 @@ article.categories__cards:hover svg {
 .faq__content {
     display: flex;
     padding-top: 0px;
-    max-width: 619px;
+    min-width: 620px;
     flex-direction: column;
     gap: 18px;
+    position: relative;
+}
+
+.faq__content:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(15, 115, 246);
+    opacity: 0.1;
+    filter: blur(200px);
+    z-index: -1; /
 }
 
 .faq__content-item {
@@ -1158,7 +1172,6 @@ article.categories__cards:hover svg {
     padding-bottom: 24px;
     margin-bottom: 0px;
     position: relative;
-    min-width: 620px;
 }
 
 
@@ -1173,7 +1186,7 @@ article.categories__cards:hover svg {
 .faq__content-title:before {
     content: '';
     position: absolute;
-    right: 29px;
+    right: 27px;
     display: block;
     width: 24px;
     height: 24px;
@@ -1181,6 +1194,7 @@ article.categories__cards:hover svg {
     outline: 2px solid rgba(29, 54, 83, 0.17);
     border-radius: 8px;
     transform: rotate(360deg);
+    padding: 2px;
 }
 
 .faq__content-item[open] .faq__content-title:before {
@@ -1270,7 +1284,12 @@ article.categories__cards:hover svg {
 }
 
 .blog__article-thumbnail {
-    clip-path: inset(0px 0px 0px 0px round 20px);
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.blog__article-thumbnail:hover {
+    outline: 2px solid rgb(2, 101, 220);
 }
 
 .blog__article-titel {
@@ -1296,20 +1315,9 @@ article.categories__cards:hover svg {
     grid-row: 1 / 2;
 }
 
-
-.blog__article:nth-of-type(2) .blog__article-thumbnail {
-    transform: scaleY(1.45);
-    clip-path: inset( 45px 0px 45px 0px round 20px);
-}
-
 .blog__article:nth-of-type(3) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-}
-
-.blog__article:nth-of-type(3) .blog__article-thumbnail {
-    transform: scaleY(1.62);
-    clip-path: inset( 55px 0px 55px 0px round 20px);
 }
 
 .footer {
