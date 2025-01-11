@@ -1499,6 +1499,8 @@ article.categories__cards:hover svg {
 .footer__main-wrap {
     padding-block: 64px 80px;
     padding-inline: 80px;
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 .catalog_main {
