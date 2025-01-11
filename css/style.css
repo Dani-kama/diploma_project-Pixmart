@@ -1151,11 +1151,40 @@ article.categories__cards:hover svg {
 
 .faq__content-item {
     border-radius: 10px;
-    box-shadow: 0 0 0 2px #00ff26;
+    box-shadow: 0px 4px 40px 0px rgba(29, 57, 95, 0.08);
+    background: rgb(255, 255, 255);
     padding-top: 27px;
     padding-left: 24px;
     padding-bottom: 24px;
     margin-bottom: 0px;
+    position: relative;
+    min-width: 620px;
+}
+
+
+.faq__content-item:hover {
+    outline: 2px solid rgb(2, 101, 220);;
+}
+
+.faq__content-item[open] {
+    outline: 2px solid rgb(2, 101, 220);
+}
+
+.faq__content-title:before {
+    content: '';
+    position: absolute;
+    right: 29px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url("/img/chevron-down.svg") no-repeat center;
+    outline: 2px solid rgba(29, 54, 83, 0.17);
+    border-radius: 8px;
+    transform: rotate(360deg);
+}
+
+.faq__content-item[open] .faq__content-title:before {
+    transform: rotate(180deg);
 }
 
 .faq__content-title {
