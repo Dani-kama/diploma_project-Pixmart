@@ -1168,7 +1168,7 @@ article.categories__cards:hover svg {
     display: block;
     width: 24px;
     height: 24px;
-    background: url("/img/chevron-down.svg") no-repeat center;
+    background: url("/img/chevron_down.svg") no-repeat center;
     outline: 2px solid rgba(29, 54, 83, 0.17);
     border-radius: 8px;
     transform: rotate(360deg);
@@ -1518,13 +1518,15 @@ article.categories__cards:hover svg {
     color: rgba(34, 52, 73, 0.4);
 }
 
+/* to stretch background to full viewport without horizontal scrolling*/
+/* ------------------------------------------------------------------ */
 .footer__bottom-bar {
     background-color: var(--color-bg-base-invert);
     width: 100vw;
     margin-inline-start: 50%;
     transform: translateX(-50%);
 }
-
+/* ------------------------------------------------------------------- */
 .footer__copyright-container {
     padding-top: 24px;
     height: 72px;
