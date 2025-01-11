@@ -385,7 +385,6 @@ span.hero__accent {
 .hero__buttons-social:disabled {
     background: rgba(255, 255, 255, 0.17);
     outline: 2px solid rgba(34, 52, 73, 0.4);
-    border-radius: 8px;
     background: rgba(29, 54, 83, 0.17);
     color: rgba(34, 52, 73, 0.4);
 }
@@ -843,6 +842,28 @@ article.categories__cards:hover svg {
     padding: 18px 78px;
 }
 
+.trending__card-link:hover {
+    background: rgb(56, 146, 243);
+}
+
+.trending__card-link:focus-visible {
+    outline: 4px solid rgb(56, 146, 243);
+    border-radius: 8px;
+    background: rgb(2, 101, 220);
+}
+
+.trending__card-link:active {
+    border-radius: 8px;
+    background: rgb(0, 84, 182);
+}
+
+.trending__card-link:disabled{
+    border-radius: 8px;
+    background: rgba(29, 54, 83, 0.17);
+    color: rgba(34, 52, 73, 0.4);
+}
+
+
 .trending__cards-button-wrap {
     position: absolute;
     inset: 0;
@@ -916,10 +937,30 @@ article.categories__cards:hover svg {
     border-radius: 20px;
     box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.08);
     background: #fff;
+    position: relative;
 }
 
 .pricing-plan__cards:hover {
     outline: 2px solid #0265dc;
+    transform: translateY(-32px);
+}
+
+
+.pricing-plan__cards:hover.pricing-plan__cards:before {
+    content: 'BEST SELLER';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0px;
+    padding: 0px 24px 0px 24px;
+    border-radius: 0px 20px 0px 20px;
+    background: rgb(2, 101, 220);
+
 }
 
 .pricing-plan__cards-header {
@@ -958,6 +999,18 @@ article.categories__cards:hover svg {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.pricing-plan__content-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(31, 50, 71, 0.27)
 }
 
 .pricing-plan__list-items {
@@ -991,6 +1044,28 @@ article.categories__cards:hover svg {
     line-height: var(--font-line-height-large);
     width: 352px;
     text-align: center;
+}
+
+.pricing-plan__cards-link:hover {
+    background: rgb(56, 146, 243);
+    color: var(--color-brand-buttons);
+}
+
+.pricing-plan__cards-link:focus-visible {
+    outline: 4px solid rgb(56, 146, 243);
+    border-radius: 8px;
+    background: rgb(2, 101, 220);
+}
+
+.pricing-plan__cards-link:active {
+    border-radius: 8px;
+    background: rgb(0, 84, 182);
+}
+
+.pricing-plan__cards-link:disabled {
+    border-radius: 8px;
+    background: rgba(29, 54, 83, 0.17);
+    color: rgba(34, 52, 73, 0.4);
 }
 
 .faq {
@@ -1031,14 +1106,39 @@ article.categories__cards:hover svg {
 .faq__header-link {
     border-radius: 8px;
     background-color: #FFFFFF;
-    border: 2px solid rgba(29, 54, 83, 0.17);
+    outline: 2px solid rgba(29, 54, 83, 0.17);
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-large);
     line-height: var(--font-line-height-large);
     text-align: center;
     padding: 17px;
-    width: 222px;
+    padding: 18px 32px 18px 32px;
     height: 64px;
+}
+
+.faq__header-link:hover {
+    outline: 2px solid rgba(41, 77, 117, 0.09);
+    border-radius: 8px;
+    background: rgba(41, 77, 117, 0.09);
+}
+
+.faq__header-link:focus-visible {
+    outline: 4px solid rgb(56, 146, 243);
+    border-radius: 8px;
+    background: rgba(41, 77, 117, 0.09);
+}
+
+.faq__header-link:active {
+    outline: 2px solid rgba(41, 77, 117, 0.09);
+    border-radius: 8px;
+    background: rgba(41, 77, 117, 0.09);
+}
+
+.faq__header-link:disabled {
+    background: rgba(255, 255, 255, 0.17);
+    outline: 2px solid rgba(34, 52, 73, 0.4);
+    background: rgba(29, 54, 83, 0.17);
+    color: rgba(34, 52, 73, 0.4);
 }
 
 .faq__content {
