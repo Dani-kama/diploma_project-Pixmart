@@ -2000,10 +2000,11 @@ article.categories__cards:hover svg {
     gap: 24px;
 }
 
-.content__filters-view-wrap {
+.content__filters-view {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .visually-hidden {
