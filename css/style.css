@@ -944,7 +944,6 @@ article.categories__cards:hover svg {
     padding: 0px 24px 0px 24px;
     border-radius: 0px 20px 0px 20px;
     background: rgb(2, 101, 220);
-
 }
 
 .pricing-plan__cards-header {
@@ -1008,7 +1007,7 @@ article.categories__cards:hover svg {
     display: block;
     width: 16px;
     height: 16px;
-    background: url('/img/pricing_plan_marker.svg') no-repeat center;
+    background: url('img/pricing_plan_marker.svg') no-repeat center;
     background-size: contain;
     position: absolute;
     left: 0;
@@ -1168,7 +1167,7 @@ article.categories__cards:hover svg {
     display: block;
     width: 24px;
     height: 24px;
-    background: url("/img/chevron_down.svg") no-repeat center;
+    background: url("img/chevron_down.svg") no-repeat center;
     outline: 2px solid rgba(29, 54, 83, 0.17);
     border-radius: 8px;
     transform: rotate(360deg);
@@ -1743,6 +1742,21 @@ article.categories__cards:hover svg {
     flex-direction: row;
     justify-content: center;
     padding: 8px 20px 8px 20px;
+    position: relative;
+}
+
+.content__filters-select-item:after {
+    content: '';
+    position: absolute;
+    right: 27px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("img/chevron_down.svg");
+    outline: 2px solid rgba(29, 54, 83, 0.17);
+    border-radius: 8px;
+    transform: rotate(360deg);
+    padding: 2px;
 }
 
 .content__filters-select-item {
@@ -1832,13 +1846,93 @@ article.categories__cards:hover svg {
     gap: 20px;
 }
 
-img.content__card-preview {
+.content__card:hover .content__price {
+    color: rgb(2, 101, 220);
+}
+
+
+.content__card-preview {
     height: 260px;
     object-fit: cover;
     border-radius: 20px;
 }
+.sold_out {
+    position: relative;
+    opacity: 50%;
+}
 
-h2.content__card-title {
+.sold_out .content__buttons-container {
+    display: none;
+}
+
+/* alignment after removing buttons */
+/* ----------------------------------------- */
+.sold_out .content__price {
+    padding-top: 6px;   
+}
+/* ------------------------------------------ */
+.sold_out .content__card-preview {
+    background: rgb(244, 247, 250);
+    opacity: 0.5;
+}
+
+.sold_out:before {
+    content: "SOLD OUT";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgb(255, 255, 255);
+    border-radius: 100px;
+    color: rgba(41, 52, 65, 0.7);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    z-index: 2;
+    padding: 8px 16px 8px 16px;
+}
+
+.new_item {
+    position: relative;
+}
+
+.new_item:before {
+    content: "NEW";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgb(0, 119, 114);
+    border-radius: 100px;
+    color: rgb(245, 248, 251);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    z-index: 2;
+    padding: 8px 16px 8px 16px;
+}
+
+.top_item {
+position: relative;
+}
+
+.top_item:before {
+    content: "POPULAR";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgb(2, 101, 220);
+    border-radius: 100px;
+    color: rgb(245, 248, 251);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    z-index: 2;
+    padding: 8px 16px 8px 16px;
+}
+
+.content__card-title {
     color: rgb(13, 13, 21);
     font-family: Plus Jakarta Sans;
     font-size: 20px;
