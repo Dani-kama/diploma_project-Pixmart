@@ -2787,6 +2787,7 @@ blockquote.blog-details__quote {
     margin-top: 134px;
     padding-block: 38px;
     padding-inline: 80px;
+    background: rgb(240, 246, 253);
 }
 
 .blog-details__cards-title-wrap {
@@ -2811,8 +2812,44 @@ blockquote.blog-details__quote {
     font-size: 16px;
     font-weight: 590;
     line-height: 32px;
-    padding-right: 26px;
+    padding-right: 5px;
     letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.blog-details__title-link-icon {
+transform: rotate(180deg);
+}
+
+.blog-details__title-link:hover {
+    color: rgb(56, 146, 243);
+}
+
+.blog-details__title-link:active {
+    color: rgb(0, 84, 182);
+}
+
+.blog-details__title-link:focus-visible {
+    outline:  solid rgb(56, 146, 243);
+    border-radius: 5px;
+}
+
+.blog-details__title-link:visited {
+    color: rgb(0, 84, 182);
+}
+
+.blog-details__title-link:disabled {
+    color: rgba(34, 52, 73, 0.4);
+}
+
+
+.blog-details__cards-background {
+    max-width: 1280px;
+    margin-inline: auto;
 }
 
 .blog-details__cards-wrap {
@@ -2829,6 +2866,7 @@ blockquote.blog-details__quote {
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 4px 30px 0px rgba(29, 57, 95, 0.05);
+    background: rgb(255, 255, 255);
 }
 
 .blog-details__cards-link:hover {
