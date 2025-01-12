@@ -2527,6 +2527,24 @@ position: relative;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    position: relative;
+}
+
+.blog-details__categories-wrap:after,
+.blog-details__categories-wrap:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:rgb(13, 13, 21);
+}
+
+.blog-details__categories-wrap:before {
+    top: 0;
+}
+
+.blog-details__categories-wrap:after {
+    bottom: -2px;
 }
 
 .categories__list-tittle {
@@ -2597,6 +2615,17 @@ ul.last-articles__list {
 
 .last-articles__item {
     padding-bottom: 12px;
+    position: relative;
+}
+
+.last-articles__item:first-child:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color:rgba(34, 34, 34, 0.15);
+    bottom: -2px;
+    left: 0px;
 }
 
 .last-articles__item-link {
