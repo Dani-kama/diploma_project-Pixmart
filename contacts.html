@@ -237,40 +237,40 @@
                             placeholder="Enter your message ..."
                             rows="6"
                         ></textarea>
-                    </form>
-                    <div class="contact__footer-form">
-                        <div class="contact__policy-wrap">
-                            <input
-                                type="checkbox"
-                                id="id-subscribe-me"
-                                class="visually-hidden contact__subscribe-policy-check"
-                                name="subscribe-me"
+                        <div class="contact__footer-form">
+                            <div class="contact__policy-wrap">
+                                <input
+                                    type="checkbox"
+                                    id="id-subscribe-me"
+                                    class="visually-hidden contact__subscribe-policy-check"
+                                    name="subscribe-me"
+                                    form="id-contact-form"
+                                >
+                                <label for="id-subscribe-me" class="contact__subscribe-policy-label">
+                                    Subscribe me to Newsletter
+                                </label>
+                                <input
+                                    type="checkbox"
+                                    id="id-policy"
+                                    class="visually-hidden contact__subscribe-policy-check"
+                                    name="subscribe-policy"
+                                    form="id-contact-form"
+                                    required
+                                    checked
+                                >
+                                <label for="id-policy" class="contact__subscribe-policy-label">
+                                    I have read the User & Privacy Policy
+                                </label>
+                            </div>
+                            <button
+                                type="submit"
+                                class="contact__submit-button"
                                 form="id-contact-form"
                             >
-                            <label for="id-subscribe-me" class="contact__subscribe-policy-label">
-                                Subscribe me to Newsletter
-                            </label>
-                            <input
-                                type="checkbox"
-                                id="id-policy"
-                                class="visually-hidden contact__subscribe-policy-check"
-                                name="subscribe-policy"
-                                form="id-contact-form"
-                                required
-                                checked
-                            >
-                            <label for="id-policy" class="contact__subscribe-policy-label">
-                                I have read the User & Privacy Policy
-                            </label>
+                            Send Message
+                            </button>
                         </div>
-                        <button
-                            type="submit"
-                            class="contact__submit-button"
-                            form="id-contact-form"
-                        >
-                        Send Message
-                        </button>
-                    </div>
+                    </form>
                 </div>
             </section>
 
