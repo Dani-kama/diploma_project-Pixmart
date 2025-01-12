@@ -640,6 +640,7 @@ article.categories__cards:hover svg {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
+    min-width: 1280px;
 }
 
 .trending__text {
@@ -1201,6 +1202,7 @@ article.categories__cards:hover svg {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    min-width: 1280px;
 }
 
 .blog__title {
@@ -1447,6 +1449,7 @@ article.categories__cards:hover svg {
     font-size: 24px;
     line-height: 32px;
     max-width: 233px;
+    min-width: 216px;
 }
 
 .newsletter__email-input {
@@ -1461,6 +1464,7 @@ article.categories__cards:hover svg {
     padding: 17px;
     margin-left: 9px;
     background: rgb(255, 255, 255);
+    gap: 10px;
 }
 
 .newsletter__email-input:hover {
@@ -1493,6 +1497,7 @@ article.categories__cards:hover svg {
     border-radius: 8px;
     border: none;
     color: var(--color-brand-buttons);
+    height: 64px;
 }
 
 .newsletter__form-button:hover {
