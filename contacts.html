@@ -6,7 +6,7 @@
         <!--<meta name="description" content="description text">-->
         <!--<meta name="keywords" content=" tags words">-->
         <!-- <meta name="copyright" content="my name"> -->
-        <title>PixMart Catalog</title>
+        <title>PixMart Contact point</title>
         <!-- place for icons and favicons -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,16 +36,16 @@
                         <a class="nav-menu__link" href="#">about</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link links" href="#">products</a>
+                        <a class="nav-menu__link links" href="catalog.html">products</a>
                     </li>
                     <li class="nav-menu__item">
                         <a class="nav-menu__link links" href="#">creators</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link links" href="#">blog</a>
+                        <a class="nav-menu__link links" href="blog_details.html">blog</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link links" href="#">contact</a>
+                        <a class="nav-menu__link links" href="contacts.html">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -87,10 +87,10 @@
             <section class="contact">
                 <div class="contact__flex-wrap-column">
                     <div class="contact__title-wrap">
-                        <h2 class="contact__header">CONTACT</h2>
-                        <h3 class="contact__title">Get in Touch
+                        <h1 class="contact__header">CONTACT</h1>
+                        <h2 class="contact__title">Get in Touch
                             with Us
-                        </h3>
+                        </h2>
                         <p class="contact__text">
                             We are here to help you navigate your creative journey. Reach out for any questions, support, or feedback.
                         </p>
@@ -237,40 +237,40 @@
                             placeholder="Enter your message ..."
                             rows="6"
                         ></textarea>
-                    </form>
-                    <div class="contact__footer-form">
-                        <div class="contact__policy-wrap">
-                            <input
-                                type="checkbox"
-                                id="id-subscribe-me"
-                                class="visually-hidden contact__subscribe-policy-check"
-                                name="subscribe-me"
+                        <div class="contact__footer-form">
+                            <div class="contact__policy-wrap">
+                                <input
+                                    type="checkbox"
+                                    id="id-subscribe-me"
+                                    class="visually-hidden contact__subscribe-policy-check"
+                                    name="subscribe-me"
+                                    form="id-contact-form"
+                                >
+                                <label for="id-subscribe-me" class="contact__subscribe-policy-label">
+                                    Subscribe me to Newsletter
+                                </label>
+                                <input
+                                    type="checkbox"
+                                    id="id-policy"
+                                    class="visually-hidden contact__subscribe-policy-check"
+                                    name="subscribe-policy"
+                                    form="id-contact-form"
+                                    required
+                                    checked
+                                >
+                                <label for="id-policy" class="contact__subscribe-policy-label">
+                                    I have read the User & Privacy Policy
+                                </label>
+                            </div>
+                            <button
+                                type="submit"
+                                class="contact__submit-button"
                                 form="id-contact-form"
                             >
-                            <label for="id-subscribe-me" class="contact__subscribe-policy-label">
-                                Subscribe me to Newsletter
-                            </label>
-                            <input
-                                type="checkbox"
-                                id="id-policy"
-                                class="visually-hidden contact__subscribe-policy-check"
-                                name="subscribe-policy"
-                                form="id-contact-form"
-                                required
-                                checked
-                            >
-                            <label for="id-policy" class="contact__subscribe-policy-label">
-                                I have read the User & Privacy Policy
-                            </label>
+                            Send Message
+                            </button>
                         </div>
-                        <button
-                            type="submit"
-                            class="contact__submit-button"
-                            form="id-contact-form"
-                        >
-                        Send Message
-                        </button>
-                    </div>
+                    </form>
                 </div>
             </section>
 
@@ -280,13 +280,15 @@
             <div class="footer__main-wrap">
                 <div class="footer__content">
                     <div class="footer__logo-description">
-                        <svg
-                            class="footer__logo"
-                            width="300"
-                            height="50.19"
-                        >
-                            <use xlink:href="img/sprite.svg#pixmart-logo"></use>
-                        </svg>
+                        <a href="" class="footer__logo-home-link" href="index.html">
+                            <svg
+                                class="footer__logo"
+                                width="300"
+                                height="50.19"
+                            >
+                                <use xlink:href="img/sprite.svg#pixmart-logo"></use>
+                            </svg>
+                        </a>
                         <p class="footer__logo-description">Your premium digital assets solution with high  quality and comprehensive range of products and services.</p>
                     </div>
                     <div class="footer__links-sections">
@@ -309,7 +311,7 @@
                                     <a href="#" class="footer__links">About Us</a>
                                 </li>
                                 <li class="footer__links-lists-items">
-                                    <a href="#" class="footer__links">Blog Articles</a>
+                                    <a href="blog_details.html" class="footer__links">Blog Articles</a>
                                 </li>
                             </ul>
                         </section>
@@ -318,7 +320,7 @@
                             <h2 class="footer__list-header">Products</h2>
                             <ul class="footer__list">
                                 <li class="footer__links-lists-items">
-                                    <a href="#" class="footer__links">Website</a>
+                                    <a href="catalog.html" class="footer__links">Website</a>
                                 </li>
                                 <li class="footer__links-lists-items">
                                     <a href="#" class="footer__links">Mobile App</a>
@@ -354,7 +356,7 @@
                                     <a href="#" class="footer__links">Company Policy</a>
                                 </li>
                                 <li class="footer__links-lists-items">
-                                    <a href="#" class="footer__links">Send A Message</a>
+                                    <a href="contacts.html" class="footer__links">Send A Message</a>
                                 </li>
                                 <li class="footer__links-lists-items">
                                     <a href="#" class="footer__links">Customer Support</a>
@@ -456,6 +458,6 @@
                     <p class="footer__copyright">Copyright &copy; 2024 Pixmart. All rights reserved.</p>
                 </div>
             </div>
-        </footer>>
+        </footer>
     </body>
 </html>

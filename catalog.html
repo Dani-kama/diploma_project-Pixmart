@@ -33,16 +33,16 @@
                         <a class="nav-menu__link" href="#">about</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link links" href="#">products</a>
+                        <a class="nav-menu__link links" href="catalog.html">products</a>
                     </li>
                     <li class="nav-menu__item">
                         <a class="nav-menu__link links" href="#">creators</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link links" href="#">blog</a>
+                        <a class="nav-menu__link links" href="blog_details.html">blog</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__link links" href="#">contact</a>
+                        <a class="nav-menu__link links" href="contacts.html">contact</a>
                     </li>
                 </ul>
             </nav>
@@ -255,6 +255,7 @@
                             Style
                         </legend>
                         <div class="side-filters__style-wrap">
+                            <div class="toggle-wrapper">
                                 <input
                                     type="checkbox"
                                     name="style"
@@ -264,8 +265,11 @@
                                     checked
                                 >
                                 <label for="id-minimalist" class="side-filters__style-toggle-label">
-                                    Minimalist
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-text">Minimalist</span>
                                 </label>
+                            </div>
+                            <div class="toggle-wrapper">
                                 <input
                                     type="checkbox"
                                     name="style"
@@ -275,8 +279,11 @@
                                     checked
                                 >
                                 <label for="id-modern" class="side-filters__style-toggle-label">
-                                    Modern
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-text">Modern</span>
                                 </label>
+                            </div>
+                            <div class="toggle-wrapper">
                                 <input
                                     type="checkbox"
                                     name="style"
@@ -286,8 +293,11 @@
                                     checked
                                 >
                                 <label for="id-playful" class="side-filters__style-toggle-label">
-                                    Playful
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-text">Playful</span>
                                 </label>
+                            </div>
+                            <div class="toggle-wrapper">
                                 <input
                                     type="checkbox"
                                     name="style"
@@ -297,8 +307,11 @@
                                     checked
                                 >
                                 <label for="id-dark-mode" class="side-filters__style-toggle-label">
-                                    Dark Mode
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-text">Dark Mode</span>
                                 </label>
+                            </div>
+                            <div class="toggle-wrapper">
                                 <input
                                     type="checkbox"
                                     name="style"
@@ -308,8 +321,10 @@
                                     checked
                                 >
                                 <label for="id-photocentric" class="side-filters__style-toggle-label">
-                                    Photocentric
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-text">Photocentric</span>
                                 </label>
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="side-filters__form-price">
@@ -373,73 +388,80 @@
             <div class="content">
                 <div class="content__filters-buttons">
                     <div class="content__filters-view-wrap">
-                        <label for="id-sort-by" class="content__filters-select-tittle visually-hidden">
-                            Sort by
-                        </label>
-                        <select
-                            name="sort-by"
-                            id="id-sort-by"
-                            class="content__filters-select-input"
-                            form="id-form-filters"
+                        <form
+                            class="content__filters-view"
+                            action="/#"
+                            method="get"
+                            id="id-filters-view"
                         >
-                            <option value="best-seller" class="content__filters-select-item">
-                                Best Seller
-                            </option>
-                            <option value="newest" class="content__filters-select-item">
-                                Newest
-                            </option>
-                            <option value="price" class="content__filters-select-item">
-                                Price
-                            </option>
-                            <option value="lorem" class="content__filters-select-item">
-                                Lorem
-                            </option>
-                        </select>
-                        <div class="content__view">
-                            <p class="content__filter-results">
-                                Showing
-                                <span class="content__results-shown" id="results-shown">12</span>
-                                out of
-                                <span class="content__results-of" id="results-of">120</span>
-                                results.
-                            </p>
-                            <button
-                                type="button"
-                                class="content__view-button"
-                                aria-controls="id-content__product-list"
-                                aria-label="button for show grid"
-                                title="show in grid"
-                                data-action=""
-                                id="id-product-grid"
+                            <label for="id-sort-by" class="content__filters-select-tittle visually-hidden">
+                                Sort by
+                            </label>
+                            <select
+                                name="sort-by"
+                                id="id-sort-by"
+                                class="content__filters-select-input"
+                                form="id-form-filters"
                             >
-                                <svg
-                                    class="content__view-button-img"
-                                    width="24"
-                                    height="24"
-                                    aria-hidden="true"
+                                <option value="best-seller" class="content__filters-select-item">
+                                    Best Seller
+                                </option>
+                                <option value="newest" class="content__filters-select-item">
+                                    Newest
+                                </option>
+                                <option value="price" class="content__filters-select-item">
+                                    Price
+                                </option>
+                                <option value="lorem" class="content__filters-select-item">
+                                    Lorem
+                                </option>
+                            </select>
+                            <div class="content__view">
+                                <p class="content__filter-results">
+                                    Showing
+                                    <span class="content__results-shown" id="results-shown">12</span>
+                                    out of
+                                    <span class="content__results-of" id="results-of">120</span>
+                                    results.
+                                </p>
+                                <button
+                                    type="button"
+                                    class="content__view-button"
+                                    aria-controls="id-content__product-list"
+                                    aria-label="button for show grid"
+                                    title="show in grid"
+                                    data-action=""
+                                    id="id-product-grid"
                                 >
-                                    <use xlink:href="img/sprite.svg#grid-ico"></use>
-                                </svg>
-                            </button>
-                            <button
-                                type="button"
-                                class="content__view-button"
-                                aria-controls="id-content__product-list"
-                                aria-label="button for show list"
-                                title="show in list"
-                                data-action=""
-                                id="id-product-list"
-                            >
-                                <svg
-                                    class="content__view-button-img"
-                                    width="24"
-                                    height="24"
-                                    aria-hidden="true"
+                                    <svg
+                                        class="content__view-button-img"
+                                        width="24"
+                                        height="24"
+                                        aria-hidden="true"
+                                    >
+                                        <use xlink:href="img/sprite.svg#grid-ico"></use>
+                                    </svg>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="content__view-button"
+                                    aria-controls="id-content__product-list"
+                                    aria-label="button for show list"
+                                    title="show in list"
+                                    data-action=""
+                                    id="id-product-list"
                                 >
-                                    <use xlink:href="img/sprite.svg#list-ico"></use>
-                                </svg>
-                            </button>
-                        </div>
+                                    <svg
+                                        class="content__view-button-img"
+                                        width="24"
+                                        height="24"
+                                        aria-hidden="true"
+                                    >
+                                        <use xlink:href="img/sprite.svg#list-ico"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                     <ul class="content__tags-list">
                         <li class="content__tag-item">
@@ -483,7 +505,7 @@
                     </ul>
                 </div>
                 <div class="content__product-list" id="id-content__product-list">
-                    <article class="content__card">
+                    <article class="content__card sold_out">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/lens_chronicles.webp"
@@ -535,7 +557,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card new_item">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/career_success.webp"
@@ -587,7 +609,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card top_item">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/real_estate.webp"
@@ -691,7 +713,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card new_item">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/healthcare_pro.webp"
@@ -743,7 +765,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card sold_out">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/gaming_rise.webp"
@@ -795,7 +817,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card sold_out">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/edit_pro.webp"
@@ -847,7 +869,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card new_item">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/banking_redefined.webp"
@@ -1003,7 +1025,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card new_item">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/analytical_dashboard.webp"
@@ -1055,7 +1077,7 @@
                         </div>
                     </article>
 
-                    <article class="content__card">
+                    <article class="content__card sold_out">
                         <a href="#" class="content__card-link">
                             <img
                                 src="img/kindergarten.webp"
@@ -1125,13 +1147,15 @@
             <div class="footer__main-wrap">
                 <div class="footer__content">
                     <div class="footer__logo-description">
-                        <svg
-                            class="footer__logo"
-                            width="300"
-                            height="50.19"
-                        >
-                            <use xlink:href="img/sprite.svg#pixmart-logo"></use>
-                        </svg>
+                        <a href="" class="footer__logo-home-link" href="index.html">
+                            <svg
+                                class="footer__logo"
+                                width="300"
+                                height="50.19"
+                            >
+                                <use xlink:href="img/sprite.svg#pixmart-logo"></use>
+                            </svg>
+                        </a>
                         <p class="footer__logo-description">Your premium digital assets solution with high  quality and comprehensive range of products and services.</p>
                     </div>
                     <div class="footer__links-sections">
@@ -1154,7 +1178,7 @@
                                     <a href="#" class="footer__links">About Us</a>
                                 </li>
                                 <li class="footer__links-lists-items">
-                                    <a href="#" class="footer__links">Blog Articles</a>
+                                    <a href="blog_details.html" class="footer__links">Blog Articles</a>
                                 </li>
                             </ul>
                         </section>
@@ -1163,7 +1187,7 @@
                             <h2 class="footer__list-header">Products</h2>
                             <ul class="footer__list">
                                 <li class="footer__links-lists-items">
-                                    <a href="#" class="footer__links">Website</a>
+                                    <a href="catalog.html" class="footer__links">Website</a>
                                 </li>
                                 <li class="footer__links-lists-items">
                                     <a href="#" class="footer__links">Mobile App</a>
@@ -1199,7 +1223,7 @@
                                     <a href="#" class="footer__links">Company Policy</a>
                                 </li>
                                 <li class="footer__links-lists-items">
-                                    <a href="#" class="footer__links">Send A Message</a>
+                                    <a href="contacts.html" class="footer__links">Send A Message</a>
                                 </li>
                                 <li class="footer__links-lists-items">
                                     <a href="#" class="footer__links">Customer Support</a>
