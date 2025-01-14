@@ -124,7 +124,9 @@ button {
     gap: 120px;
 }
 
-header {
+
+
+.header {
     display: flex;
     align-items: center;
     padding-top: 22px;
