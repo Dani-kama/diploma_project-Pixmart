@@ -1570,7 +1570,7 @@ article.categories__cards:hover svg {
     background-color: rgb(244, 247, 250);
 }
 
-.side-filters__format-radio:focus-visible+ .side-filters__format-radio-label:before {
+.side-filters__format-radio:focus-visible + .side-filters__format-radio-label:before {
     content: "";
     display: inline-block;
     background-color: rgb(244, 247, 250);
@@ -1584,7 +1584,7 @@ article.categories__cards:hover svg {
     margin: 5px;
     border-radius: 50%;
     padding: 4.5px;
-    outline: 2px solid rgb(56, 146, 243);
+    outline: 4px solid rgb(56, 146, 243);
 }
 
 .side-filters__format-radio:active+ .side-filters__format-radio-label:before {
@@ -3121,6 +3121,69 @@ transform: rotate(180deg);
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    position: relative;
+}
+
+.contact__subscribe-policy-label:before {
+    content: "";
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid rgba(31, 50, 71, 0.27);
+    border-radius: 4px;
+    width: 13px;
+    height: 13px;
+    left: -25px;
+    top: -2px;
+    position: absolute;
+    margin: 5px;
+}
+
+.contact__subscribe-policy-check:hover+ .contact__subscribe-policy-label:before {
+    background: rgb(244, 247, 250);
+}
+
+.contact__subscribe-policy-check:focus-visible+.contact__subscribe-policy-label:before {
+    outline: 3px solid rgb(56, 146, 243);
+    background: rgb(248, 250, 252);
+}
+
+.contact__subscribe-policy-check:active+ .contact__subscribe-policy-label:before {
+    background: rgb(181, 222, 255);
+    outline: none;
+}
+
+.contact__subscribe-policy-check:disabled+ .contact__subscribe-policy-label:before {
+    background-color: rgba(29, 54, 83, 0.17);
+}
+
+.contact__subscribe-policy-check:disabled .contact__subscribe-policy-label {
+    color: rgba(34, 52, 72, 0.4);
+}
+
+.contact__subscribe-policy-check:checked+ .contact__subscribe-policy-label:before {
+    background-color: rgb(2, 101, 220);
+    outline: 2px solid rgb(2, 101, 220);
+    background-image: url(/img/mark_checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: 2px 4px;
+}
+
+.contact__subscribe-policy-check:checked:hover+ .contact__subscribe-policy-label:before {
+    background-color: rgb(56, 146, 243);
+    outline: 2px solid rgb(56, 146, 243);
+}
+
+.contact__subscribe-policy-check:checked:focus-visible+ .contact__subscribe-policy-label:before {
+    outline: 3px solid rgb(56, 146, 243);
+    background-color: rgb(181, 222, 255);
+}
+
+.contact__subscribe-policy-check:checked:disabled+ .contact__subscribe-policy-label:before {
+    background-color: rgba(29, 54, 83, 0.17);
+}
+
+.contact__subscribe-policy-check:checked:disabled .contact__subscribe-policy-label {
+    color: rgba(34, 52, 72, 0.4);
 }
 
 .contact__submit-button {
