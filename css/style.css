@@ -156,27 +156,11 @@ header {
 .header__search-filds {
     width: 240px;
     padding: 10px 12px;
-    border: 1px solid rgba(29, 54, 83, 0.17);
-    border-radius: 8px;
     font-size: var(--font-size-controls);
     font-weight: var(--font-weight-small);
     line-height: var(--font-line-height-small);
     color: var(--color-text-secondary-alt);
-    background: rgb(255, 255, 255);
 }
-
-.header__search-filds:hover {
-    outline: 2px solid rgb(56, 146, 243);
-    border-radius: 8px;
-    background: rgb(255, 255, 255);
-}
-
-.header__search-filds:focus {
-    outline: 3px solid rgb(56, 146, 243);
-    border-radius: 8px;
-    background: rgb(255, 255, 255);
-}
-
 
 .header__card-button {
     display: flex;
@@ -1456,36 +1440,12 @@ article.categories__cards:hover svg {
     color: var(--color-text-secondary-alt);
     width: 260px;
     height: 64px;
-    border-radius: 8px;
-    border-color: rgba(29, 54, 83, 0.17);
     font-weight: var(--font-weight-small);
     font-size: var(--font-size-small);
     line-height: var(--font-line-height-medium);
     padding: 17px;
     margin-left: 9px;
-    background: rgb(255, 255, 255);
     gap: 10px;
-}
-
-.newsletter__email-input:hover {
-    border: 2px solid rgb(56, 146, 243);
-}
-
-.newsletter__email-input:focus-visible {
-    border: 3px solid rgb(56, 146, 243);
-}
-
-.newsletter__email-input:invalid:not(:placeholder-shown) {
-    border: 1px solid rgb(234, 56, 41);
-}
-
-.newsletter__email-input:valid {
-    border: 1px solid rgba(29, 54, 83, 0.17);
-}
-
-.newsletter__email-input:disabled {
-    border: 1px solid rgba(29, 54, 83, 0.17);
-    background: rgba(41, 77, 117, 0.09);
 }
 
 .newsletter__form-button {
@@ -3218,7 +3178,71 @@ transform: rotate(180deg);
     padding: 16px 12px 16px 18px;
     margin-bottom: 16px;
     border-radius: 10px;
-    border: 1px solid rgba(29, 54, 83, 0.17);
+}
+
+.header__search-filds,
+.newsletter__email-input,
+.contact__form-textarea,
+.contact__form-subject,
+.contact__form-input,
+.contact__form-input-name {
+    outline: 1px solid rgba(29, 54, 83, 0.17);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+}
+
+
+.contact__form-input-name:hover,
+.contact__form-input:hover,
+.contact__form-subject:hover,
+.contact__form-textarea:hover,
+.header__search-filds:hover,
+.newsletter__email-input:hover {
+    outline: 2px solid rgb(56, 146, 243);
+}
+
+.contact__form-input-name:focus-visible,
+.contact__form-input:focus-visible,
+.contact__form-subject:focus-visible,
+.contact__form-textarea:focus-visible,
+.header__search-filds:focus-visible,
+.newsletter__email-input:focus-visible {
+    outline: 3px solid rgb(56, 146, 243);
+}
+
+.contact__form-input-name:invalid:not(:placeholder-shown),
+.contact__form-input:invalid:not(:placeholder-shown),
+.contact__form-subject:invalid:not(:placeholder-shown),
+.contact__form-textarea:invalid:not(:placeholder-shown),
+.newsletter__email-input:invalid:not(:placeholder-shown) {
+    outline: 1px solid rgb(234, 56, 41);
+}
+
+.contact__form-input-name:invalid:not(:placeholder-shown):after,
+.contact__form-input:invalid:not(:placeholder-shown):after,
+.contact__form-subject:invalid:not(:placeholder-shown):after,
+.contact__form-textarea:invalid:not(:placeholder-shown):after,
+.newsletter__email-input:invalid:not(:placeholder-shown):after {
+    
+}
+
+.contact__form-input-name:valid,
+.contact__form-input:valid,
+.contact__form-subject:valid,
+.contact__form-textarea:valid,
+.newsletter__email-input{
+    outline: 1px solid rgba(29, 54, 83, 0.17);
+}
+
+.contact__form-input-name:disabled,
+.contact__form-input:disabled,
+.contact__form-subject:disabled,
+.contact__form-textarea:disabled,
+.header__search-filds:disabled,
+.newsletter__email-input:disabled {
+    outline: 1px solid rgba(29, 54, 83, 0.17);
+    background: rgba(41, 77, 117, 0.09)
 }
 
 .contact__form-subject {
