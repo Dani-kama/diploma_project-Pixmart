@@ -269,9 +269,6 @@ button {
     line-height: var(--font-line-height-heroes);
     letter-spacing: -0.5px;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .block-line {
