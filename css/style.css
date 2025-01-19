@@ -1061,10 +1061,9 @@ article.categories__cards:hover svg {
 
 .faq {
     display: flex;
-    gap: 206px;
+    gap: 140px;
     align-items: flex-start;
     justify-content: space-between;
-    padding-bottom: 3px;
 }
 
 .faq__text-container {
@@ -1072,8 +1071,10 @@ article.categories__cards:hover svg {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
-    margin-top: 197px;
-    min-width: fit-content;
+    padding-top: 196px;
+    flex-wrap: nowrap;
+    padding-right: 28px;
+    padding-bottom: 28px;
 }
 
 .faq__header {
@@ -1092,6 +1093,7 @@ article.categories__cards:hover svg {
     letter-spacing: -0.5px;
     color: var(--color-titles);
     margin-bottom: 15px;
+    overflow: hidden;
 }
 
 .faq__header-link {
@@ -1114,6 +1116,7 @@ article.categories__cards:hover svg {
     flex-direction: column;
     gap: 18px;
     position: relative;
+    max-width: 620px;
 }
 
 .faq__content:after {
@@ -1136,8 +1139,8 @@ article.categories__cards:hover svg {
     padding-top: 27px;
     padding-left: 24px;
     padding-bottom: 24px;
-    margin-bottom: 0px;
     position: relative;
+    padding-right: 24px;
 }
 
 
@@ -1174,6 +1177,10 @@ article.categories__cards:hover svg {
     font-weight: var(--font-weight-extra);
     line-height: 26px;
     list-style: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 41px;
 }
 
 .faq__content-details {
@@ -1181,7 +1188,9 @@ article.categories__cards:hover svg {
     font-size: var(--font-size-small);
     font-weight: var(--font-weight-small);
     line-height: var(--font-line-height-medium);
-    padding: 20px 24px 0px 0px;
+    padding-top: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .blog {
