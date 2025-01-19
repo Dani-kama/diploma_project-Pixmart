@@ -249,8 +249,8 @@ button {
 .hero__content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 29px;
+    justify-content: flex-start;
+    gap: 33px;
     flex-wrap: nowrap;
     padding-inline: 80px 40px;
     margin-block: 47px;
@@ -372,24 +372,28 @@ span.hero__accent {
 
 .hero__img-container {
     display: grid;
-    grid-template-columns: 11.6% 28.3%;
+    grid-template-columns: 12.6% 28%;
     grid-template-rows: 3.5% 31%;
     grid-gap: 32px;
-    max-width: 618px;
+    max-width: 624px;
 }
 
 .hero__img-examples {
     grid-column: 3/4;
     grid-row: 2/3;
     object-fit: cover;
+    outline: 5px solid rgb(255, 255, 255);
+    outline-offset: -5px;
+    border-radius: 10px;
 }
 
 .hero__image-ui {
     grid-column: 1/2;
     grid-row: 1/4;
     object-fit: cover;
-    object-position: right;
     z-index: 1;
+    border-radius: 10px;
+    object-position: -345px;
 }
 
 .hero__img-screens {
@@ -405,19 +409,10 @@ span.hero__accent {
     flex-direction: row;
     gap: 34px;
     justify-content: flex-start;
-    padding-inline: 81px 80px;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
-/* to center content when the screen width is larger than 1440px */
-/* ------------------------------------------------------------- */
-@media (min-width: 1441px) {
-    section.products {
-        padding-inline: 80px;
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-}
-/* ---------------------------------------------------------------*/
 .products__item {
     display: flex;
     flex-direction: column;
