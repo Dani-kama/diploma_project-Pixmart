@@ -204,7 +204,6 @@ button {
     align-items: center;
     max-width: 820px;
     flex-wrap: nowrap;
-    overflow: hidden;
 }
 
 .nav-menu__item {
@@ -265,7 +264,6 @@ button {
     padding: 74px 0 0 0;
     margin: 0px 100px 74px 0;
     flex-wrap: nowrap;
-    overflow: hidden;
 }
 
 .hero__title {
@@ -530,6 +528,7 @@ article.categories__cards {
     border-radius: 20px;
     flex-direction: column;
     color: var(--color-brand);
+    max-width: 220px;
 }
 
 article.categories__cards:hover {
@@ -548,6 +547,7 @@ article.categories__cards:hover svg {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    overflow: hidden;
 }
 
 .categories__cards-title {
@@ -557,12 +557,23 @@ article.categories__cards:hover svg {
     line-height: var(--font-size-extra);
     color: var(--color-text-primary);
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .categories__cards-category-wrap {
+    white-space: nowrap;
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-small);
+    color: var(--color-text-secondary);
+    line-height: var(--font-line-height-medium);
+    margin: 0;
+    overflow: hidden;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: flex-start;
+    gap: 22px;
 }
 
 .categories__cards-category {
@@ -573,7 +584,7 @@ article.categories__cards:hover svg {
     margin: 0;
 }
 
-.categories__cards-category:nth-of-type(1)::after {
+.categories__cards-category:not(:last-of-type):after {
     content: "·";
     display: inline-block;
     font-size: var(--font-size-small);
@@ -581,6 +592,7 @@ article.categories__cards:hover svg {
     color: var(--color-text-secondary);
     line-height: var(--font-line-height-medium);
     padding-inline: 9px;
+    position: absolute;
 }
 
 .categories__text-container {
@@ -588,7 +600,9 @@ article.categories__cards:hover svg {
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-    margin-top: 78px;
+    padding-top: 78px;
+    padding-right: 10px;
+    margin-bottom: 10px;
 }
 
 .categories__header {
@@ -634,7 +648,8 @@ article.categories__cards:hover svg {
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    min-width: 1280px;
+    flex-wrap: nowrap;
+    gap: 16px;
 }
 
 .trending__text {
@@ -642,6 +657,7 @@ article.categories__cards:hover svg {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
+    flex-wrap: nowrap;
 }
 
 .trending__header {
@@ -661,12 +677,17 @@ article.categories__cards:hover svg {
     letter-spacing: -0.5px;
     color: var(--color-titles);
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 1124px;
 }
 
 .trending__buttons-wrap {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    flex-wrap: nowrap;
 }
 
 .trending__button-prev,
@@ -683,17 +704,14 @@ article.categories__cards:hover svg {
     transform: rotate(180deg);
 }
 
-.trending {
-    width: 100vw;
-}
-
 .trending__cards-wrap {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    margin-top: 48px;
+    padding-top: 48px;
     align-items: flex-start;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 .trending__cards {
@@ -703,6 +721,8 @@ article.categories__cards:hover svg {
     gap: 8px;
     position: relative;
     justify-content: flex-start;
+    max-width: 305px;
+    overflow: hidden;
 }
 
 .trending__cards:hover .trending__cards-button-wrap{
@@ -736,10 +756,13 @@ article.categories__cards:hover svg {
 .trending__cards-text {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 8px;
+    padding-top: 8px;
+    flex-wrap: nowrap;
+    gap: 8px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .trending__cards-title {
@@ -749,10 +772,13 @@ article.categories__cards:hover svg {
     line-height: var(--font-size-extra);
     color: var(--color-text-primary);
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .trending__price {
-    margin: 0;
+    margin-left: auto;
 }
 
 .trending__numbers {
@@ -768,7 +794,9 @@ article.categories__cards:hover svg {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: max-content;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .trending__cards-category {
@@ -835,7 +863,7 @@ article.categories__cards:hover svg {
     line-height: var(--font-line-height-large);
 }
 
-.trending__cards-category:nth-of-type(1)::after {
+.trending__cards-category:not(:last-of-type):after {
     content: "·";
     display: inline-block;
     font-size: var(--font-size-small);
@@ -851,6 +879,7 @@ article.categories__cards:hover svg {
     align-items: center;
     justify-content: flex-start;
     gap: 16px;
+    flex-wrap: nowrap;
 }
 
 .pricing-plan__header {
@@ -868,7 +897,11 @@ article.categories__cards:hover svg {
     font-size: var(--font-size-subheadings);
     font-weight: var(--font-weight-extra);
     line-height: var(--font-line-hieght-regular);
-    letter-spacing: -0.5px;    
+    letter-spacing: -0.5px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  
 }
 
 .pricing-plan__items {
@@ -888,6 +921,7 @@ article.categories__cards:hover svg {
     box-shadow: 0 4px 40px 0 rgba(29, 57, 95, 0.08);
     background: #fff;
     position: relative;
+    width: 416px;
 }
 
 .pricing-plan__cards:hover {
@@ -918,6 +952,10 @@ article.categories__cards:hover svg {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-extra);
     line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .pricing-plan__cards-price {
@@ -966,6 +1004,10 @@ article.categories__cards:hover svg {
     position: relative;
     padding-left: 32px;
     line-height: var(--font-line-height-medium);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .pricing-plan__list-items::before {
@@ -991,8 +1033,11 @@ article.categories__cards:hover svg {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-large);
     line-height: var(--font-line-height-large);
-    width: 352px;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .pricing-plan__cards-link:hover {
