@@ -1064,6 +1064,7 @@ article.categories__cards:hover svg {
     gap: 140px;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .faq__text-container {
